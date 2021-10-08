@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A39AC17C-529B-98A8-7C9C-F54A16AEA5A9" name="LIST_GROUP">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB7E13C7-6E8E-AFB3-9190-5B258668030A" name="GRADE">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:15:54 UTC</createdTime>
-<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<createdTime>2021-10-08 10:58:07 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
@@ -15,10 +15,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID" id="AF35E235-8CC5-AF17-5BE9-390F28FB1E31">
+<Attribute name="STATEMENT" id="1498E02C-B39F-2CCD-ABCB-821912B0B8A0">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:39:28 UTC</createdTime>
-<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<createdTime>2021-10-08 10:58:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ведомость студента]]></commentInRDBMS>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
@@ -27,10 +28,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="STUDENT" id="80516492-A1B8-00AD-8E4E-15FFA8F06658">
+<Attribute name="STUDENT" id="548FF16A-1C9F-8C0A-8837-42EEE92D79FA">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:39:28 UTC</createdTime>
-<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<createdTime>2021-10-08 10:58:50 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
@@ -40,29 +41,31 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="GROUP" id="AAB97842-E51D-2581-8827-BD0F1401BF7D">
+<Attribute name="MARK" id="23023761-6301-0CD4-19E7-F237B158EA07">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:39:29 UTC</createdTime>
-<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<createdTime>2021-10-08 10:58:51 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
-<use>0</use>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="98AB2A74-8E74-77A0-77E2-B28A8C7EEF19" name="LIST_GROUP PK">
+<Attribute name="TEST" id="46D0C6F8-C509-757A-B975-66ECA0278DB2">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:41:09 UTC</createdTime>
-<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<createdTime>2021-10-08 10:58:51 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
-<pk>true</pk>
-<usedAttributes>
-<attributeRef>AF35E235-8CC5-AF17-5BE9-390F28FB1E31</attributeRef>
-</usedAttributes>
-</identifier>
-</identifiers>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
 </Entity>

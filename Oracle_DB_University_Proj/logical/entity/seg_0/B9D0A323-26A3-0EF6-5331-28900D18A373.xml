@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A39AC17C-529B-98A8-7C9C-F54A16AEA5A9" name="LIST_GROUP">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B9D0A323-26A3-0EF6-5331-28900D18A373" name="DEPARTMENT">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:15:54 UTC</createdTime>
+<createdTime>2021-10-08 11:54:47 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="ID" id="AF35E235-8CC5-AF17-5BE9-390F28FB1E31">
+<Attribute name="ID_DEPARTMENT" id="8C61704F-EE5F-3357-2A72-697C6F825733">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:39:28 UTC</createdTime>
+<createdTime>2021-10-08 11:55:05 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="STUDENT" id="80516492-A1B8-00AD-8E4E-15FFA8F06658">
+<Attribute name="NAME" id="5012C648-1CFC-562F-687A-375A382C85B1">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:39:28 UTC</createdTime>
+<createdTime>2021-10-08 11:55:06 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
@@ -37,31 +37,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="GROUP" id="AAB97842-E51D-2581-8827-BD0F1401BF7D">
-<createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:39:29 UTC</createdTime>
-<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
-<engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
-</engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="98AB2A74-8E74-77A0-77E2-B28A8C7EEF19" name="LIST_GROUP PK">
+<identifier id="85859B59-DACE-6492-70BC-5617C023F70E" name="DEPARTMENT PK">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 11:41:09 UTC</createdTime>
+<createdTime>2021-10-08 11:56:11 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>AF35E235-8CC5-AF17-5BE9-390F28FB1E31</attributeRef>
+<attributeRef>8C61704F-EE5F-3357-2A72-697C6F825733</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

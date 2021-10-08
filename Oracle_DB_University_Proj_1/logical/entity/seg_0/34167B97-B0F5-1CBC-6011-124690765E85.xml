@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34167B97-B0F5-1CBC-6011-124690765E85" name="GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:59:58 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_GROUP" id="720162D4-FA3F-40B0-1AA1-12144EFBCCE6">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:00:28 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TERM" id="10D3C8FA-51FC-B6D0-33D5-985FAA545950">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:00:28 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GROUP" id="680201CD-5AE0-F96D-E788-9091644A4946">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:00:28 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SPECIALIZATION" id="9BD88A75-FECA-E173-B2B1-CD6A37F1D33F">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:00:29 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4831265D-D0A9-772E-B356-DFC395EEC90A" name="GROUP PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:00:41 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_1</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>720162D4-FA3F-40B0-1AA1-12144EFBCCE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

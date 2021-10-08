@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C67840EA-A903-6BD3-C710-0236A2CEDDDB" name="TEACHER_DATA">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:42:40 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TEACHER" id="1BCCC47E-C4E9-3DDF-3817-9FCF478D36BB">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:09 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASS_DATA" id="E4CABE9A-1CA8-983B-9CE0-122B3AA326C8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:09 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CITY" id="4531FEA8-B9F9-C05F-940A-DF00F2150C0D">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:10 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCAL" id="AF47630F-ED1B-6761-FB3D-B41CFF1D8D10">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:10 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STREET" id="D0D61F3B-042C-0730-C3A7-8884C177A131">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:10 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HOUSE_NUMBER" id="FF9C63EE-8FE2-4DC7-FC08-FA603839B237">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:10 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEPHONE_NUMBER" id="01B15A02-7AD0-260B-ACE2-4A030029468F">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:10 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="E-MAIL" id="15082865-2FAB-F632-5F04-C66EA8AF5509">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:43:11 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C8E6067-41AD-C76F-965A-0273C2980AA9" name="TEACHER_DATA PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 11:44:02 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1BCCC47E-C4E9-3DDF-3817-9FCF478D36BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
