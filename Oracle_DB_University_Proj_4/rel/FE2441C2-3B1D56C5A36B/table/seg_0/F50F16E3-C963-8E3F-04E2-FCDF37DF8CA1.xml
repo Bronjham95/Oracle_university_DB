@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F50F16E3-C963-8E3F-04E2-FCDF37DF8CA1" name="DISCIPLINE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>31256EA0-7C97-412B-26FB-4377A6A33625</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DISCIPLINE" id="EEAE3587-76AD-FF03-CDC3-F8615106EBF1">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>9FB7EC41-9B6C-4F1D-89A3-E2E4BEB4E6C7</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="F8F14882-2E81-75FE-5E25-ADE636C439D8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>69D99B59-384A-B302-26D6-52900573765C</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIME" id="2ADCBD46-B605-35CA-FB82-6248A76BE898">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>70B71B4D-96CB-AC41-FDD3-6250A3C09824</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REPORTING" id="F87E5396-0AF7-BFA5-ED28-5C1AA5391E3E">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>83C2B6BE-A775-D62A-3F07-E8EF232BD0D5</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TERM" id="7B51B9EC-AA87-A1BF-73D0-3776881EAD3C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>EC5731D0-EE65-CB77-17FB-3D42C045459F</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPECIALIZATION" id="D40CF7A8-41F6-BCF9-4AC2-B758301AB658">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>645BEE57-538F-CA59-8B84-5025BADC4145</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F74549E-A442-F0AA-8C28-FFDA09B988BD" name="DISCIPLINE_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 16:38:56 UTC</createdTime>
+<generatorID>5C12790C-A41E-1CAB-A001-02FBD8C4ED49</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEAE3587-76AD-FF03-CDC3-F8615106EBF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

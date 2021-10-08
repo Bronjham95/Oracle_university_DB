@@ -4,7 +4,7 @@
 <createdTime>2021-10-08 11:15:54 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="FE2441C2-59A2-DEA4-92D6-3B1D56C5A36B" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2021-10-08 11:39:28 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="FE2441C2-59A2-DEA4-92D6-3B1D56C5A36B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,7 +32,7 @@
 <createdTime>2021-10-08 11:39:28 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="FE2441C2-59A2-DEA4-92D6-3B1D56C5A36B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -40,12 +40,12 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="GROUP" id="AAB97842-E51D-2581-8827-BD0F1401BF7D">
+<Attribute name="GROUP_NUMBER" id="AAB97842-E51D-2581-8827-BD0F1401BF7D">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 11:39:29 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="FE2441C2-59A2-DEA4-92D6-3B1D56C5A36B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,7 +59,7 @@
 <generatorID>CE070448-47DB-576D-12EA-36485601E312</generatorID>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="FE2441C2-59A2-DEA4-92D6-3B1D56C5A36B" value="true"/>
 </engineerTo>
 <referedAttribute>720162D4-FA3F-40B0-1AA1-12144EFBCCE6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -74,7 +74,7 @@
 <createdTime>2021-10-08 11:41:09 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="FE2441C2-59A2-DEA4-92D6-3B1D56C5A36B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

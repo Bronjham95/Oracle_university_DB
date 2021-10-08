@@ -4,7 +4,7 @@
 <createdTime>2021-10-08 10:58:07 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <commentInRDBMS><![CDATA[Ведомость студента]]></commentInRDBMS>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +33,7 @@
 <createdTime>2021-10-08 10:58:50 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,12 +46,12 @@
 <createdTime>2021-10-08 10:58:51 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT018</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="TEST" id="46D0C6F8-C509-757A-B975-66ECA0278DB2">
@@ -59,7 +59,7 @@
 <createdTime>2021-10-08 10:58:51 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>

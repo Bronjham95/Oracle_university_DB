@@ -4,7 +4,7 @@
 <createdTime>2021-10-08 11:59:58 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,7 +20,7 @@
 <createdTime>2021-10-08 12:00:28 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -32,19 +32,19 @@
 <createdTime>2021-10-08 12:00:28 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT018</logicalDatatype>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="GROUP" id="680201CD-5AE0-F96D-E788-9091644A4946">
+<Attribute name="GROUP_NUMBER" id="680201CD-5AE0-F96D-E788-9091644A4946">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 12:00:28 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -57,7 +57,7 @@
 <createdTime>2021-10-08 12:00:29 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -72,7 +72,7 @@
 <createdTime>2021-10-08 14:24:33 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
 <engineerTo>
-<item key="67EF2B5F-F34A-A211-1723-61893ABF2B3E" value="true"/>
+<item key="D7C8E41E-AAB9-BB2C-3780-319B16795B0D" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
