@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E6A1AE3-3F42-2A4F-F3A1-21988449CE56" name="STUDENT_DATA">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>B4B4106A-1B6A-D8C8-6228-EDC9D3E8A0D1</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_STUDENT" id="D87BBDB3-1CC7-E671-2D93-A9456B4F2292">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>77DA39F3-0030-36E6-AB62-A8BEAD00BD4E</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASS_DATA" id="9B37A5C7-1B20-66E3-345D-4D1843F7EB41">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>CE3CC9AA-14D4-8A64-A625-DC95FB97E6F6</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="31212ED1-17A0-1737-231D-DE75C0CB2F12">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>93A65A05-E96A-D505-0B92-41FE2FF8CD51</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCAL" id="6B0163FB-320E-3A50-4B25-FD2F5D25C8DA">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>FDD4FAEC-72C5-5EEE-CEC2-5EBDE6FE6B0E</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET" id="08017766-866A-70E4-182D-80BEA8DEDF31">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>D0F3A0FC-49DA-F2E4-F324-E1906593E4D2</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOUSE_NUMBER" id="D0EC64B4-620B-E2AE-9BBF-0E4561C695D9">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>A1BA045F-3A46-EE4F-B7DE-1BA1721A469D</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEPHONE_NUMBER" id="A1250DD2-FFE8-C9B9-8200-483E2A1638F8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>1FC2D7BF-2E7E-C6B6-48EC-6449136F1CB2</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E-MAIL" id="FDD10909-8198-7AB6-DB27-0277915ED1CC">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>70C947AF-2708-D17E-BC1F-A735D86CBE5F</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5391FF1C-0D3C-095F-78E6-65098E81D4A2" name="STUDENT_DATA_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>8D9076C5-B3C5-93DC-2673-BC9010EA34CA</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D87BBDB3-1CC7-E671-2D93-A9456B4F2292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

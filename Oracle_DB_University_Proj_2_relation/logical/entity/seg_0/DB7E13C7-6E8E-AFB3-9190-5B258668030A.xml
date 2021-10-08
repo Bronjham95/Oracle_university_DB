@@ -73,8 +73,9 @@
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 12:43:55 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="false"/>
 </engineerTo>
 <pk>true</pk>
 </identifier>

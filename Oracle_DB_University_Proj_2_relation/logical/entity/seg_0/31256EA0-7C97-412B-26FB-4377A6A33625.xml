@@ -89,14 +89,29 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="NUM_STATEMENT" id="A60ECFA0-5770-44EF-CF91-D129F674C1A6">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:12:28 UTC</createdTime>
+<generatorID>2B119954-D45C-A88A-D54D-7DAE74BA845B</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<referedAttribute>E59AEB17-E901-83D8-5ED7-C3996AF8B166</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5C12790C-A41E-1CAB-A001-02FBD8C4ED49" name="DISCIPLINE PK">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 12:03:58 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

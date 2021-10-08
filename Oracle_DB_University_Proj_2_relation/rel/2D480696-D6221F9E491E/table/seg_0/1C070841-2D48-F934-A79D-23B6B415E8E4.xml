@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C070841-2D48-F934-A79D-23B6B415E8E4" name="STATEMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>3449218F-9D98-7BCA-4292-65B0FD2BA751</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUM_STATEMENT" id="E3E74A7B-8181-7417-1A37-1D19F6A1658C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>E59AEB17-E901-83D8-5ED7-C3996AF8B166</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROUP" id="2D8D00A1-DDAA-47C0-50A6-E07540C77EF8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>7D7CAF03-0D91-F0D4-46E6-1F1159185C07</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCIPLINE" id="7CD783AB-AD8A-1CCD-EE7B-CDAC40530D35">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>2F93CB9F-2EC9-A34A-FF76-AE7201191F14</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEACHER" id="DC0B57B9-6FD8-C5B4-C4EE-04E10EB8291C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>5CAA60B6-7E82-F8B9-4333-EE034C693944</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEACHER_DEPARTMENT_ID_DEPARTMENT" id="6B54430E-49B6-7D81-3E20-B6564BDDBE68">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>DED15E74-863D-1168-34C2-B4E721DF2B06</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCIPLINE_ID_DISCIPLINE" id="E6666D53-0043-70F6-8AB4-5F77180812FD">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>FFDF9774-BE6A-3244-C234-3C1B891A1C49</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROUP_ID_GROUP" id="D37690B5-EF59-74D9-985D-FB31BE30E62C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>85649104-5863-63D8-70D0-617A590F5466</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2B57CFC1-EA79-1472-EE6D-F2CE0AC6AD8E" referredColumn="39F56525-B846-5024-D5C1-C30D50D13C51"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00279F78-B2D8-41ED-EF95-62EC7B55A8F8" name="STATEMENT_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>C92AD669-895B-D742-FAFB-8CBAA9C5C08D</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3E74A7B-8181-7417-1A37-1D19F6A1658C"/>
+<colUsage columnID="6B54430E-49B6-7D81-3E20-B6564BDDBE68"/>
+<colUsage columnID="E6666D53-0043-70F6-8AB4-5F77180812FD"/>
+<colUsage columnID="D37690B5-EF59-74D9-985D-FB31BE30E62C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A150E4FD-3282-918F-672D-9EF4563AE211" name="STATEMENT_GROUP_FK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>C6DB3338-DDC0-1CAD-8E77-597BE5E67F0C</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D37690B5-EF59-74D9-985D-FB31BE30E62C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2E99657-6322-23C7-AEFA-93F8968EA7DD" name="STATEMENT_GRADE_FK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 12:50:40 UTC</createdTime>
+<generatorID>F2F3EEA6-88C9-92AC-A5F9-8461E3C09EF2</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

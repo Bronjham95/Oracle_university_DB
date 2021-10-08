@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7687F31F-CC93-696B-953A-0B99EBFEAF25" containerWithKeyObject="C84F6E79-7230-EE45-3191-28474A1317C0" localFKIndex="F788381B-FCB6-206A-7632-595AEE582755" name="DISCIPLINE_STATEMENT_FK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 13:29:33 UTC</createdTime>
+<generatorID>5424617C-5D28-5A6C-9884-E91A249C8BA2</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<referredTableLongName>STATEMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1C070841-2D48-F934-A79D-23B6B415E8E4</referredTableID>
+<keyObject>00279F78-B2D8-41ED-EF95-62EC7B55A8F8</keyObject>
+<referredKeyID>00279F78-B2D8-41ED-EF95-62EC7B55A8F8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NUM_STATEMENT,TEACHER_DEPARTMENT_ID_DEPARTMENT,DISCIPLINE_ID_DISCIPLINE,GROUP_ID_GROUP</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

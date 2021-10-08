@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DB3F109-BF5E-EBE1-47E8-F0DFF6D002E9" name="SPECIALIZATION">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>28870CC0-CF02-B745-A701-683FCF19B701</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SPECIALIZATION" id="9DFD79FC-690E-2A4A-5B52-84C95FB46D71">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>EEF6FC2F-7329-9E26-33E9-31A83970E0B5</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="8DFBA911-86E6-6C82-6938-6FF2402EF023">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>09170E33-A669-07C6-3D01-EBFA70B5CBD3</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDUCATION_LEVEL" id="9EFE7643-5755-FFD1-1861-5671CFEA713D">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>C4054AE3-86CB-022F-93B1-9E7032C4077B</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCIPLINE_ID_DISCIPLINE" id="4F3F95B0-D2EF-F7A3-5F55-99482F180CEC">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>E4AB232D-106F-B620-30FA-68588528839B</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E4037AD9-68D9-D3E9-B621-7F71F69F54B9" referredColumn="0F00CA66-1F32-71BA-BE00-EB8905D293D1"/>
+</associations>
+</Column>
+<Column name="GROUP_ID_GROUP" id="6CCEB1FA-03C1-0BAA-A4B8-1F0FF1BCEECC">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>A57276D0-3240-CB97-1333-0454DA4A8A56</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD9436EC-541F-A1F4-FEE4-CBFDA4F753AA" referredColumn="420F9283-E0AB-4FB9-784C-C8A9CC000363"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80525E57-BB0B-C15F-0DC2-A1B7C42CE082" name="SPECIALIZATION_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>1305B5DB-931C-B4A9-1162-8BFDA44A3075</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DFD79FC-690E-2A4A-5B52-84C95FB46D71"/>
+<colUsage columnID="4F3F95B0-D2EF-F7A3-5F55-99482F180CEC"/>
+<colUsage columnID="6CCEB1FA-03C1-0BAA-A4B8-1F0FF1BCEECC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C72DDB7B-B77C-5295-72F7-EE6AD93C3F94" name="SPECIALIZATION_DISCIPLINE_FK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>485F0FA8-4D85-879A-DED0-6235F1AD46A6</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F3F95B0-D2EF-F7A3-5F55-99482F180CEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71AA2CE7-743B-8D3A-21DF-C93AE7ACE7CD" name="SPECIALIZATION_GROUP_FK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:42:03 UTC</createdTime>
+<generatorID>18748D05-19D9-2F85-7630-05F43D643B80</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CCEB1FA-03C1-0BAA-A4B8-1F0FF1BCEECC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

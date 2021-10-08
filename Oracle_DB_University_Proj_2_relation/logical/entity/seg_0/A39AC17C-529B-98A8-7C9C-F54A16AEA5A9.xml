@@ -47,22 +47,11 @@
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
-<use>0</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ID_GROUP" id="4C9DCD77-B0A9-E961-D6D5-1EDCD34FFA4B">
-<createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 12:47:16 UTC</createdTime>
-<generatorID>36F06BDA-4069-7E95-FB19-E5F86E0DFF68</generatorID>
-<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
-<engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
-</engineerTo>
-<referedAttribute>720162D4-FA3F-40B0-1AA1-12144EFBCCE6</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -70,13 +59,13 @@
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 11:41:09 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>AF35E235-8CC5-AF17-5BE9-390F28FB1E31</attributeRef>
-<attributeRef>4C9DCD77-B0A9-E961-D6D5-1EDCD34FFA4B</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

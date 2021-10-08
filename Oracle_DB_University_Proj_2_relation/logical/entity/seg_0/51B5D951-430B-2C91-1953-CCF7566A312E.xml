@@ -109,15 +109,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ID_DEPARTMENT" id="2CF50D2B-F25C-A584-271D-1443CCF36452">
+<Attribute name="NUM_STATEMENT" id="3A8E6643-9FAA-B6E8-7856-3760722209A0">
 <createdBy>Viktor</createdBy>
-<createdTime>2021-10-08 12:42:56 UTC</createdTime>
-<generatorID>C1A5F761-11B2-C82D-0A94-F438E1A182CA</generatorID>
+<createdTime>2021-10-08 14:11:53 UTC</createdTime>
+<generatorID>2838FEE6-A6F3-93D6-0DF4-822485D67999</generatorID>
 <ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
 <engineerTo>
 <item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
 </engineerTo>
-<referedAttribute>8C61704F-EE5F-3357-2A72-697C6F825733</referedAttribute>
+<referedAttribute>E59AEB17-E901-83D8-5ED7-C3996AF8B166</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -129,13 +129,11 @@
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 12:42:56 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="false"/>
 </engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>2CF50D2B-F25C-A584-271D-1443CCF36452</attributeRef>
-</usedAttributes>
 </identifier>
 </identifiers>
 </Entity>

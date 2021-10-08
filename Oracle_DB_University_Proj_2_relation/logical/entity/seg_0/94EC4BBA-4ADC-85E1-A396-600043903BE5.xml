@@ -81,14 +81,29 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ID" id="69A4B8A9-A0D3-2F32-8EA2-E810C5914DAC">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:09:53 UTC</createdTime>
+<generatorID>5558CD04-3ECD-62E2-4F24-1129B9BDEFEC</generatorID>
+<ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<engineerTo>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+</engineerTo>
+<referedAttribute>AF35E235-8CC5-AF17-5BE9-390F28FB1E31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A7F4389E-507E-1DE0-9F79-253EB8056A6C" name="STUDENT PK">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-08 10:50:50 UTC</createdTime>
 <ownerDesignName>Oracle_DB_University_Proj_2_relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="true"/>
+<item key="2D480696-8644-E045-41CD-D6221F9E491E" value="false"/>
 </engineerTo>
 <pk>true</pk>
 </identifier>
