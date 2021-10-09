@@ -49,9 +49,10 @@
 <generatorID>75CA6A34-91FD-3D02-52FF-29CA371E87DC</generatorID>
 <ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
+<domain>250411F7-AAC8-0154-D01A-AE1EF647FA66</domain>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>

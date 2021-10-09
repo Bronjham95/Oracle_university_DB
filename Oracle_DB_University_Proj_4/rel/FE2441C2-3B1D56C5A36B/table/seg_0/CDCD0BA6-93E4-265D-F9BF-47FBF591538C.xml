@@ -14,9 +14,10 @@
 <generatorID>DBE18CD8-38BA-1423-CC6F-4073F41C44EC</generatorID>
 <ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
+<domain>3401B2C2-1A8B-A709-C469-4019D9FC7C11</domain>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -26,9 +27,10 @@
 <generatorID>249BF1CC-49EE-8F67-465A-D1AFBA45C741</generatorID>
 <ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
+<domain>315907A9-C815-AD43-B3A6-723228502802</domain>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
@@ -39,9 +41,10 @@
 <ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>30</dataTypeSize>
+<domain>D9CC79D5-A99E-C9F2-3213-DF1B9872E806</domain>
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
