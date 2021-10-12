@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8C01D77-358B-7B43-4751-276BD50E8555" name="LIST_GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>A39AC17C-529B-98A8-7C9C-F54A16AEA5A9</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E3442AA5-83DF-B898-A5A7-F756293E4F1A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>AF35E235-8CC5-AF17-5BE9-390F28FB1E31</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STUDENT" id="83434652-E065-E61A-FDCE-6AE2CE01068F">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>80516492-A1B8-00AD-8E4E-15FFA8F06658</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GR_NUM" id="57197B08-0444-030C-A64C-D16CE29CB5C5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>AAB97842-E51D-2581-8827-BD0F1401BF7D</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROUP_ID_GROUP" id="1AB816C7-9DC0-D705-57C3-23FE3453B21F">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>38A1B376-8EC4-A641-97A5-60CBEA489022</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87B63240-B0F6-58B2-1375-9BAB3DCFEED5" referredColumn="811A72AE-20A9-CEB4-D04C-F5675BFFED17"/>
+</associations>
+</Column>
+<Column name="STUDENT_STUDENT_ID" id="E05550D8-EA1E-4411-661B-814322E1884E">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38375101-76ED-4661-084D-07FC472E7B23" referredColumn="7C241F3E-7CF9-844F-0A68-45EF75F07F4D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="689A7C62-6136-68AA-B822-1D795BE5C7D9" name="pk_lg">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>98AB2A74-8E74-77A0-77E2-B28A8C7EEF19</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3442AA5-83DF-B898-A5A7-F756293E4F1A"/>
+<colUsage columnID="1AB816C7-9DC0-D705-57C3-23FE3453B21F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BBD6D68-9156-27D7-7F65-8A9FA11C6263" name="fk_lg_group">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>CE070448-47DB-576D-12EA-36485601E312</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AB816C7-9DC0-D705-57C3-23FE3453B21F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F75C0AC-F26B-0DCA-87CC-10D7087A8443" name="fk_lg_student">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>69C786DC-1B18-01A1-1728-71D85FBCA19D</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E05550D8-EA1E-4411-661B-814322E1884E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

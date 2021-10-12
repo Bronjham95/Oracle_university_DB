@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TEACHER_STAT" directorySegmentName="seg_0" id="136968A5-0F43-6E6D-8F53-9531DFC036F6">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 14:40:38 UTC</createdTime>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<engineerTo>
+<item key="F50C6DFA-4202-2930-E044-7F67D2720C70" value="true"/>
+</engineerTo>
+<sourcePk>04348698-3CB9-1B64-A342-B0DCF2F2FB2D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>51B5D951-430B-2C91-1953-CCF7566A312E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3449218F-9D98-7BCA-4292-65B0FD2BA751</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

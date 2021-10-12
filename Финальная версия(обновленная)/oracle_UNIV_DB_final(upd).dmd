@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="oracle_UNIV_DB_final(upd)" id="D67F4D9C-0D13-42FC-9AC0-9F97B0B661FB" version="3.5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-08 10:39:25 UTC</createdTime>
+<ownerDesignName>Oracle_DB_University_Proj_4</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D67F4D9C-0D13-42FC-9AC0-9F97B0B661FB</designId>
+</OSDM_Design>

@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DB4F67F-5494-CFFC-A859-BF41EC1B08F0" name="STATEMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>3449218F-9D98-7BCA-4292-65B0FD2BA751</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUM_STAT" id="76E60E51-9809-8532-91AB-BC22304997DE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>E59AEB17-E901-83D8-5ED7-C3996AF8B166</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GR_NUM" id="0E8AAB18-0D77-448C-262D-8DF340EF4233">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>7D7CAF03-0D91-F0D4-46E6-1F1159185C07</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCIPLINE" id="B85072ED-2F48-84B7-D54D-682FEA638A7D">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>2F93CB9F-2EC9-A34A-FF76-AE7201191F14</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEACHER" id="0E5890B4-C856-04C5-7853-E600239AC734">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>75CA6A34-91FD-3D02-52FF-29CA371E87DC</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<domain>250411F7-AAC8-0154-D01A-AE1EF647FA66</domain>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEACHER_DEPARTMENT_ID_DEP" id="698DE3A9-8621-7CDB-3FF8-4F3807057B6E">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>8CEABC4E-3076-40BF-5F4D-489CED0E3FDA</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0680F1C0-C7FD-A9BC-2CC0-6059FB90D98F" referredColumn="9179184C-AED2-A75D-2786-50C730A87B5F"/>
+</associations>
+</Column>
+<Column name="GROUP_ID_GROUP" id="8C916CF9-D6EA-DA07-DC50-C9DB9B3A9F31">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>7D1FD4EC-D3C1-4109-022D-F565D26652C1</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EFF6EF6-341B-E557-90C7-FCA60110960D" referredColumn="811A72AE-20A9-CEB4-D04C-F5675BFFED17"/>
+</associations>
+</Column>
+<Column name="DISCIPLINE_ID_DISCIPLINE" id="7EA33D03-CAAB-912C-A87E-CC98092341A1">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>F15EF534-2547-1731-5B86-57D94F3F9937</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50B3C8FF-472A-0E71-FEB1-E956A1C440DD" referredColumn="4794B6CB-495F-5319-5A08-4DDD6E8058B3"/>
+</associations>
+</Column>
+<Column name="GRADE_GRADE_ID" id="B685A79D-90F4-533D-5D60-188D191F4BC2">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAF06FB4-72E4-7BB0-21D9-2599028D78BC" referredColumn="244F5E69-C446-5285-0686-8D7B1BB84662"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75B6A078-242A-CE83-C9ED-1616C4AF50A2" name="pk_stat">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>C92AD669-895B-D742-FAFB-8CBAA9C5C08D</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76E60E51-9809-8532-91AB-BC22304997DE"/>
+<colUsage columnID="698DE3A9-8621-7CDB-3FF8-4F3807057B6E"/>
+<colUsage columnID="8C916CF9-D6EA-DA07-DC50-C9DB9B3A9F31"/>
+<colUsage columnID="7EA33D03-CAAB-912C-A87E-CC98092341A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45D27B00-00B9-7DFB-872B-CBC31A80514B" name="fk_stat_dis">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>7C9BE3EB-5B8D-623C-0E06-D0A68A8CD75B</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA33D03-CAAB-912C-A87E-CC98092341A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="746451BA-D83F-5188-501E-2E4C340BC85E" name="fk_stat_grade">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>3F5C68B5-429E-4EEE-3088-B3A1B11AB77A</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B685A79D-90F4-533D-5D60-188D191F4BC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2431140F-5F41-66C1-C74E-219C6F7F9692" name="fk_stat_group">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>36F70DC2-C924-C98F-1DB7-AB08245D9B31</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C916CF9-D6EA-DA07-DC50-C9DB9B3A9F31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3DADB70-0C84-5359-2925-7E1B5701A489" name="fk_stat_teacher">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-12 07:33:48 UTC</createdTime>
+<generatorID>136968A5-0F43-6E6D-8F53-9531DFC036F6</generatorID>
+<ownerDesignName>oracle_UNIV_DB_final(upd)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="698DE3A9-8621-7CDB-3FF8-4F3807057B6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
