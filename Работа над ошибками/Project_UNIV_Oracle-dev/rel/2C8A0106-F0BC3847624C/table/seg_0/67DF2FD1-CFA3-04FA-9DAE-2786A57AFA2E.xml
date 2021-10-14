@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67DF2FD1-CFA3-04FA-9DAE-2786A57AFA2E" name="GRADE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>DB7E13C7-6E8E-AFB3-9190-5B258668030A</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STAT" id="5B43DDA2-4F90-FABD-D38C-6E5580B495DD">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ведомость студента]]></commentInRDBMS>
+<generatorID>1498E02C-B39F-2CCD-ABCB-821912B0B8A0</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STUDENT" id="A1428B7F-A06E-28AD-01A5-B137C9AE579F">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>548FF16A-1C9F-8C0A-8837-42EEE92D79FA</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<domain>250411F7-AAC8-0154-D01A-AE1EF647FA66</domain>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARK" id="3CF9C1A2-0235-081D-2786-B732524CA099">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>23023761-6301-0CD4-19E7-F237B158EA07</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEST" id="F19D6DD6-3032-4CE2-B382-423065F8699D">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>46D0C6F8-C509-757A-B975-66ECA0278DB2</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADE_ID" id="F6700364-E0A2-7F88-636E-59097F7E017A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="STUDENT_STUDENT_ID" id="25323264-ECF3-AE25-C421-DDD384BE0352">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636EFEF4-8988-0B53-D67A-F2AF8417E477" referredColumn="EA34A590-6797-93D0-BF9B-7CD0BA961F7D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="348E4E92-3FE1-F4AF-41D2-AFDD87F8A4F4" name="GRADE_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F6700364-E0A2-7F88-636E-59097F7E017A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70603946-1B28-F057-A92B-0B47C72FCA12" name="GRADE_STUDENT_FK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>F1EDD7DF-4ECA-B1FB-D056-BD9EFF4775D7</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25323264-ECF3-AE25-C421-DDD384BE0352"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

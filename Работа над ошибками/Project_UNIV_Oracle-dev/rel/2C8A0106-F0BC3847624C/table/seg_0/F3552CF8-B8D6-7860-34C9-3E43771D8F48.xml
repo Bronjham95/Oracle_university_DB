@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F3552CF8-B8D6-7860-34C9-3E43771D8F48" name="PERSON">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>B4B4106A-1B6A-D8C8-6228-EDC9D3E8A0D1</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PERSON_ID" id="88C49B72-D8E2-F6AF-CF45-F272F0406F57">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>77DA39F3-0030-36E6-AB62-A8BEAD00BD4E</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASS_DATA" id="054FE4C8-FBCA-2D36-3370-DEE89360705E">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>CE3CC9AA-14D4-8A64-A625-DC95FB97E6F6</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="A8FCE05D-967E-A6CC-A9D4-4E4B4D43DA35">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>93A65A05-E96A-D505-0B92-41FE2FF8CD51</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCAL" id="375F73CA-642F-1FF5-4DEA-2F45EE19C094">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>FDD4FAEC-72C5-5EEE-CEC2-5EBDE6FE6B0E</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET" id="24E34A4D-68A8-AA7C-C669-180F86139FE5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>D0F3A0FC-49DA-F2E4-F324-E1906593E4D2</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOUSE_NUM" id="C4F031E5-20CA-BC24-040E-0DE6DAA109E6">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>A1BA045F-3A46-EE4F-B7DE-1BA1721A469D</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEL_NUM" id="7F683C28-C19D-46D0-E47C-14295E60523A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>1FC2D7BF-2E7E-C6B6-48EC-6449136F1CB2</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E-MAIL" id="56303777-7F70-7F5B-2814-ECF6DF9BEC09">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>70C947AF-2708-D17E-BC1F-A735D86CBE5F</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5CEFA9D-4850-DF64-5FED-24FBC6D0A4A1" name="PERSON_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-13 11:22:00 UTC</createdTime>
+<generatorID>8D9076C5-B3C5-93DC-2673-BC9010EA34CA</generatorID>
+<ownerDesignName>Project_UNIV_Oracle-dev</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88C49B72-D8E2-F6AF-CF45-F272F0406F57"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
