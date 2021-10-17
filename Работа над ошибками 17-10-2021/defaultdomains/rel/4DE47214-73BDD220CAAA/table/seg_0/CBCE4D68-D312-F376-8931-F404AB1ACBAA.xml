@@ -1,0 +1,229 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBCE4D68-D312-F376-8931-F404AB1ACBAA" name="DEPARTMENT_SHEET">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>E9457AFC-D129-F6E3-B198-7B4398234346</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DS_ID" id="7EF43073-9164-69CD-1159-772A6AB8ECB5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(PK) ID ведомости]]></comment>
+<generatorID>538C3EB8-BB05-F1EA-8B9A-67F9F608325F</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AP_ID" id="3AFF5B8C-AA90-0F4C-0594-C99393D73945">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID успеваемости]]></comment>
+<generatorID>9603A82D-D143-41FE-3EFD-BE2F4EF16182</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FAFB1A7-CFE1-9CE6-9181-646B0D8B9A53" referredColumn="66764588-2B9E-9D44-AD5C-6C83EF3EFF52"/>
+</associations>
+</Column>
+<Column name="DIS_ID" id="D4F7CAF1-D2C3-3F4E-618C-E308C2B85D2A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID дисциплины]]></comment>
+<generatorID>99318E0E-46EC-0F4B-7BBF-4D724CD926FC</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AE5BD2E-F8A9-D045-C95A-82A8746ABB50" referredColumn="6EC7193D-5E40-9E5B-AF4F-6C23E9EF8109"/>
+</associations>
+</Column>
+<Column name="TEACHER_ID" id="D289A859-50C6-DD5A-611D-520BEA8184A8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID преподавателя]]></comment>
+<generatorID>BC93793D-38B3-9CD2-F5D3-E9EE2AE0C143</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1BFA983-C8C4-91BE-9685-163D997E94C2" referredColumn="2283635C-DDAA-25CD-FD96-11FCC4621CB0"/>
+</associations>
+</Column>
+<Column name="STUDENT_ID" id="84FB5E16-4D77-E8C9-D7D9-69EBA18AA174">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID студента]]></comment>
+<generatorID>DF97D8A5-7CB1-5840-DBFB-8DD561601D31</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FAFB1A7-CFE1-9CE6-9181-646B0D8B9A53" referredColumn="971A653B-1FF2-5B1B-73D8-2D34F4A694DD"/>
+</associations>
+</Column>
+<Column name="SG_ID" id="6138093F-C599-F5E8-4273-80A9C8B7D15C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID студенческой группы]]></comment>
+<generatorID>EEECB8A4-47E6-615B-91AE-517083584606</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="932CD348-10CD-5308-4DD0-0CB0CB8E555E" referredColumn="9AE80E68-67C5-FB67-F5EC-AD1DD896A4BE"/>
+</associations>
+</Column>
+<Column name="SPECIAL_ID" id="C6375DA0-D315-A398-FEEF-009BC4313449">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID специальности]]></comment>
+<generatorID>B7E8EE3C-2195-7B62-75CE-A846221E240E</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="932CD348-10CD-5308-4DD0-0CB0CB8E555E" referredColumn="5B5C5226-0D9E-6C32-4B42-2B157B1EDB31"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5B4AF78-E71D-25F5-F128-3062CEED5FF2" name="PK_DH">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>7B259502-FF31-D1FD-749F-18FE38B6D9C8</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EF43073-9164-69CD-1159-772A6AB8ECB5"/>
+<colUsage columnID="3AFF5B8C-AA90-0F4C-0594-C99393D73945"/>
+<colUsage columnID="84FB5E16-4D77-E8C9-D7D9-69EBA18AA174"/>
+<colUsage columnID="D4F7CAF1-D2C3-3F4E-618C-E308C2B85D2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DB02A72-2644-B23F-ECB8-1543EAF583D0" name="IFK_AP_STUD">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C6F90FEA-2E5C-FCE7-E8C2-43B958E8D07F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3AFF5B8C-AA90-0F4C-0594-C99393D73945"/>
+<colUsage columnID="84FB5E16-4D77-E8C9-D7D9-69EBA18AA174"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A8E99D3-10AE-5CA4-E3E9-1A6FF6D9A698" name="IFK_DIS_DS">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8B396CEC-F77C-F166-2C78-AB9229EC40FE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D4F7CAF1-D2C3-3F4E-618C-E308C2B85D2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3791006B-B965-6620-D996-C4B721216D76" name="IFK_SG_SPECIAL">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4EA2381A-8E6A-672A-349A-40F6A9D90F48</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6138093F-C599-F5E8-4273-80A9C8B7D15C"/>
+<colUsage columnID="C6375DA0-D315-A398-FEEF-009BC4313449"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7120F56A-11DB-B967-8DED-837199E7FF2B" name="IFK_TEACH_DS">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3083DC61-F52B-D099-8FF3-2C1404D84A23</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D289A859-50C6-DD5A-611D-520BEA8184A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="792CC992-B139-B149-52BC-BC8B744776A7" name="FK_DS_AP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>C6F90FEA-2E5C-FCE7-E8C2-43B958E8D07F</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AFF5B8C-AA90-0F4C-0594-C99393D73945"/>
+<colUsage columnID="84FB5E16-4D77-E8C9-D7D9-69EBA18AA174"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBA702B6-CBE6-1EBD-39E2-9541CAFB82D4" name="FK_DH_DIS">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>8B396CEC-F77C-F166-2C78-AB9229EC40FE</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4F7CAF1-D2C3-3F4E-618C-E308C2B85D2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D55E3A6B-F9CD-00A8-6D6E-BBEF4213F5C4" name="FK_AS_SG">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>4EA2381A-8E6A-672A-349A-40F6A9D90F48</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6138093F-C599-F5E8-4273-80A9C8B7D15C"/>
+<colUsage columnID="C6375DA0-D315-A398-FEEF-009BC4313449"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3127DB17-192D-9438-0827-78CB468516BD" name="FK_DH_TEACH">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>3083DC61-F52B-D099-8FF3-2C1404D84A23</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D289A859-50C6-DD5A-611D-520BEA8184A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

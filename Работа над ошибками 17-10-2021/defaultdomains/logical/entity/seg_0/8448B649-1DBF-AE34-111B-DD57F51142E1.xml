@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8448B649-1DBF-AE34-111B-DD57F51142E1" name="STUDENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:00:18 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="STUDENT_ID" id="CA5E8375-F335-4825-C775-189393A604F5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:00:36 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSON_ID" id="0AC6AEF4-939E-2915-2E53-16D7A3282710">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:29:03 UTC</createdTime>
+<generatorID>0E51DA98-EA4D-2E81-7519-B7A7984C7B54</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<referedAttribute>BBAA0405-B41D-6472-AB01-078898A2AA2B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASS_ID" id="5FEC98C9-DE56-2DCD-70BD-21F009428B8E">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:00:30 UTC</createdTime>
+<generatorID>E2DD66C9-D3B8-F104-1CF3-F96813CFDDA1</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<referedAttribute>1E0B7470-6076-1531-7AAE-99CBAE1CE1EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BEGIN_DATE" id="5B4F01C7-080E-13EF-C9FD-7C34E89D01BB">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:00:37 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A3C279F0-08AA-FC83-1388-8C56BD9D4235" name="PK_STUDENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:00:46 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>CA5E8375-F335-4825-C775-189393A604F5</newElementsIDs>
+<usedAttributes>
+<attributeRef>CA5E8375-F335-4825-C775-189393A604F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

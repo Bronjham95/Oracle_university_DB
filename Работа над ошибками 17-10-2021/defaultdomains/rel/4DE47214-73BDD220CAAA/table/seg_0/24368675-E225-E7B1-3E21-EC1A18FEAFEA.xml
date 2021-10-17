@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24368675-E225-E7B1-3E21-EC1A18FEAFEA" name="STUDENT_GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>99562D01-197B-E41D-F6F7-7F84F61B19A5</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GROUP_ID" id="9AE80E68-67C5-FB67-F5EC-AD1DD896A4BE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(PK) ID студенческой группы]]></comment>
+<generatorID>ACCB9215-E737-282B-6E1A-1B2F83680E67</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPECIAL_ID" id="5B5C5226-0D9E-6C32-4B42-2B157B1EDB31">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID специальности]]></comment>
+<generatorID>DCCC9274-9BB3-CD64-B0EF-7730CBAEBE95</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="604DE040-942B-4778-5485-42DCEA41BA75" referredColumn="EA412CBF-EF95-09F9-4CE2-D38F7E901591"/>
+</associations>
+</Column>
+<Column name="GROUP_NAME" id="99AE59E5-3BDB-831E-2221-C4E85180D1A2">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Название студенческой группы]]></comment>
+<generatorID>5E6CF374-6C36-606D-7AC9-588E36AD7ACC</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9886A8E6-5E27-A141-644C-57F7EC179457" name="PK_SG">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>DBEE48AC-C9E4-E164-062E-B97ED68B952B</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AE80E68-67C5-FB67-F5EC-AD1DD896A4BE"/>
+<colUsage columnID="5B5C5226-0D9E-6C32-4B42-2B157B1EDB31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09813A9A-6105-58CE-187A-E430C722490F" name="IFK_SPECIAL_SG">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C672B863-AD4E-93F1-CDA8-2A6F880BB593</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5B5C5226-0D9E-6C32-4B42-2B157B1EDB31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="02B43A20-2583-0CB7-8167-EF9B1E2560C8" name="FK_SG_SPECIAL">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>C672B863-AD4E-93F1-CDA8-2A6F880BB593</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B5C5226-0D9E-6C32-4B42-2B157B1EDB31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

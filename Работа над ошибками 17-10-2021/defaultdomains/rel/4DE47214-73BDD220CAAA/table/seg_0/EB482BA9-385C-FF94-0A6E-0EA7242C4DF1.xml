@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB482BA9-385C-FF94-0A6E-0EA7242C4DF1" name="ACADEM_PER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>752A5FF1-000D-BA1A-A0B5-E1D5C9691D5E</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AP_ID" id="66764588-2B9E-9D44-AD5C-6C83EF3EFF52">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(PK) ID успеваемости]]></comment>
+<generatorID>7A9637BA-8C26-DB5D-D6A4-B3D32356EAB8</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STUDENT_ID" id="971A653B-1FF2-5B1B-73D8-2D34F4A694DD">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID студента ]]></comment>
+<generatorID>F70ACD3C-A966-18CC-1CAA-A7CA335900FE</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80660F10-1F3D-C65C-8A11-36A5FF478516" referredColumn="2BF87F2F-3470-D8EC-C63E-2C5AD7D9A51D"/>
+</associations>
+</Column>
+<Column name="POINT" id="9FCD0CD7-961E-F94A-6571-B477BD69F8F1">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Набранные баллы ]]></comment>
+<generatorID>B1A8DC72-A94A-979C-7389-681303C545C9</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEST" id="47ED8489-1B89-2B8A-26E1-1DF8726A55A1">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Форма отчетности: зачет/не зачет]]></comment>
+<generatorID>5E402FA7-9888-4615-6952-FC2840227582</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="608E1E57-8536-D46A-8669-7BDA12E2374E" name="PK_AP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>D7122C61-9FEF-3BD7-0B9C-29BB8B6F12DF</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66764588-2B9E-9D44-AD5C-6C83EF3EFF52"/>
+<colUsage columnID="971A653B-1FF2-5B1B-73D8-2D34F4A694DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="191FF980-0F99-5131-C2DF-0BD2CB15A4E5" name="IFK_STUDENT_AP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2F6E9A01-86E2-BB26-95EB-EDDE5F2E974A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="971A653B-1FF2-5B1B-73D8-2D34F4A694DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35A89CA2-5D1B-A57B-B70C-B1A2E80BFD57" name="FK_AP_STUDENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>2F6E9A01-86E2-BB26-95EB-EDDE5F2E974A</generatorID>
+<ownerDesignName>defaultdomains</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="971A653B-1FF2-5B1B-73D8-2D34F4A694DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
