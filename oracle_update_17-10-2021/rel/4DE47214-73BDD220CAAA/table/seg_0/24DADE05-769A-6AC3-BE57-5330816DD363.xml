@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24DADE05-769A-6AC3-BE57-5330816DD363" name="SPECIALIZATION">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>CFC2C13D-AB90-3063-9D6E-65546743B872</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPEC_ID" id="EA412CBF-EF95-09F9-4CE2-D38F7E901591">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(PK) ID специальности]]></comment>
+<generatorID>D91E9C7C-13FC-A791-FEAA-83E0E63871EC</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_NAME" id="235C8894-1379-F68A-B630-289C55152035">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Название специальности]]></comment>
+<generatorID>4A48A4BF-DF6D-2441-22E9-F92B31C64847</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_LVL" id="00E6FB2A-E314-170F-F83C-3567BA2270AD">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Уровень образования: бак./маг./асп.]]></comment>
+<generatorID>A5A1537F-0D9B-4501-CB06-C56C8882E4CE</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F88B77A9-D60A-8813-162D-320BD0C44930" name="PK_SPECIAL">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>F433299C-B33B-466E-A975-0AEC2169955E</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA412CBF-EF95-09F9-4CE2-D38F7E901591"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

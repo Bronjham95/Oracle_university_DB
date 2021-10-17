@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2B437662-0667-9EAA-E701-1CBAE69C1CAF" name="INSTITUTE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:05:46 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="INST_ID" id="C8EF3CC2-DC9A-384D-9703-087D33D029C0">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:06:09 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INST_NAME" id="144A3ADA-BC96-59C4-7882-FFDC9D09572D">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:06:09 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INST_DEAN" id="ED83D619-3287-F3F0-DFD1-48465306AD7A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:06:09 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEPHONE" id="6421F6B4-B126-BB36-8B39-953C010260B8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:06:10 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="E-MAIL" id="8E6108F9-3EE2-50A9-7742-28CCD01048F2">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:06:10 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEP_ID" id="81B26F03-E43E-886C-CB16-E7FEDB4EE0D8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:32:03 UTC</createdTime>
+<generatorID>53992526-B769-8B60-5FDD-DF67901745D5</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<referedAttribute>D2A13DAE-3357-661E-6563-9B7BFFEFBFCC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="209565B8-6B16-54B3-5985-7A5D90FA4398" name="PK_INSTITUTE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:06:26 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<engineerTo>
+<item key="4DE47214-F8C3-8D38-425F-73BDD220CAAA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C8EF3CC2-DC9A-384D-9703-087D33D029C0</newElementsIDs>
+<usedAttributes>
+<attributeRef>C8EF3CC2-DC9A-384D-9703-087D33D029C0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29E753AD-9EEC-734B-4432-B130162EBD7A" name="INSTITUTE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>2B437662-0667-9EAA-E701-1CBAE69C1CAF</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INST_ID" id="B34D2B15-74E2-244A-9D51-5FF238F4324D">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(PK) ID института]]></comment>
+<generatorID>C8EF3CC2-DC9A-384D-9703-087D33D029C0</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEP_ID" id="C44A7B86-F04D-8BB7-81F7-1CA7D40C13BB">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[(FK) ID кафедры]]></comment>
+<generatorID>81B26F03-E43E-886C-CB16-E7FEDB4EE0D8</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C950DA2-FA38-6BCC-C54F-74F5204D4637" referredColumn="B82E2BE8-0AC3-2117-4197-505295F6BD9D"/>
+</associations>
+</Column>
+<Column name="INST_NAME" id="FEF12FC2-4692-3A61-3AEB-4ED203B704BD">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Название института]]></comment>
+<generatorID>144A3ADA-BC96-59C4-7882-FFDC9D09572D</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INST_DEAN" id="06F87BA8-BC88-71C8-DAE0-7232864AC1DF">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[ФИО декана]]></comment>
+<generatorID>ED83D619-3287-F3F0-DFD1-48465306AD7A</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEPHONE" id="CBF74FFC-0E3F-B62E-1499-75AB64DF589B">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Номер телефона деканата]]></comment>
+<generatorID>6421F6B4-B126-BB36-8B39-953C010260B8</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="E-MAIL" id="0B5492CC-CADD-09AC-1F39-0F10D957B18C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<comment><![CDATA[Почтовый ящик деканата]]></comment>
+<generatorID>8E6108F9-3EE2-50A9-7742-28CCD01048F2</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBE9241B-71A8-3769-AD43-327BAB8C8468" name="PK_INSTITUTE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>209565B8-6B16-54B3-5985-7A5D90FA4398</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B34D2B15-74E2-244A-9D51-5FF238F4324D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="900BB4EE-64EB-A6D6-F9C0-0EA4A1DC227A" name="IFK_INST_DEP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:09:11 UTC</createdTime>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<supportedConstraintID>CBE9241B-71A8-3769-AD43-327BAB8C8468</supportedConstraintID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C44A7B86-F04D-8BB7-81F7-1CA7D40C13BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA6B4158-AB9D-9655-C9A4-9BD1E67CEAFF" name="FK_INST_DEP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:03:43 UTC</createdTime>
+<generatorID>53992526-B769-8B60-5FDD-DF67901745D5</generatorID>
+<ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C44A7B86-F04D-8BB7-81F7-1CA7D40C13BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
