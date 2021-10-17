@@ -78,7 +78,7 @@
 <colUsage columnID="2BF87F2F-3470-D8EC-C63E-2C5AD7D9A51D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DCF15C92-526E-6FF8-7E32-65661DEB1948" name="IFK_PASSPORT_STUDENT">
+<ind_PK_UK id="DCF15C92-526E-6FF8-7E32-65661DEB1948" name="IFK_PASSPORT_STUDENT_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
@@ -89,7 +89,7 @@
 <colUsage columnID="CDE18B6B-7F61-9AD9-C7BC-0656114432AF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A18FD630-F305-7928-82E9-4461FD49E900" name="IFK_PERSON_STUDENT">
+<ind_PK_UK id="A18FD630-F305-7928-82E9-4461FD49E900" name="IFK_PERSON_STUDENT_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>

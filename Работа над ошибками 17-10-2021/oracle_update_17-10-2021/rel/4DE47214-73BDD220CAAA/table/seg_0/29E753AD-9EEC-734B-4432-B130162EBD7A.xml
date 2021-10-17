@@ -102,7 +102,7 @@
 <colUsage columnID="B34D2B15-74E2-244A-9D51-5FF238F4324D"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="900BB4EE-64EB-A6D6-F9C0-0EA4A1DC227A" name="IFK_INST_DEP">
+<ind_PK_UK id="900BB4EE-64EB-A6D6-F9C0-0EA4A1DC227A" name="IFK_INST_DEP_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:09:11 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>

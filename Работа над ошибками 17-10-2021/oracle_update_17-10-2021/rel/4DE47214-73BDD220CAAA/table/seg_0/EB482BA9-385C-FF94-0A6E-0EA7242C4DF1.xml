@@ -76,7 +76,7 @@
 <colUsage columnID="971A653B-1FF2-5B1B-73D8-2D34F4A694DD"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="191FF980-0F99-5131-C2DF-0BD2CB15A4E5" name="IFK_STUDENT_AP">
+<ind_PK_UK id="191FF980-0F99-5131-C2DF-0BD2CB15A4E5" name="IFK_STUDENT_AP_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>

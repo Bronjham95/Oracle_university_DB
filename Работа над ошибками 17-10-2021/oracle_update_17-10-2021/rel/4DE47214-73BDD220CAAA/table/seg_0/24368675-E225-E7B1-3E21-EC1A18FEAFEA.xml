@@ -64,7 +64,7 @@
 <colUsage columnID="5B5C5226-0D9E-6C32-4B42-2B157B1EDB31"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="09813A9A-6105-58CE-187A-E430C722490F" name="IFK_SPECIAL_SG">
+<ind_PK_UK id="09813A9A-6105-58CE-187A-E430C722490F" name="IFK_SPECIAL_SPECIAL_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>

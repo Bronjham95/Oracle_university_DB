@@ -133,7 +133,7 @@
 <colUsage columnID="D4F7CAF1-D2C3-3F4E-618C-E308C2B85D2A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="1DB02A72-2644-B23F-ECB8-1543EAF583D0" name="IFK_AP_STUD">
+<ind_PK_UK id="1DB02A72-2644-B23F-ECB8-1543EAF583D0" name="IFK_AP_STUDENT_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
@@ -145,7 +145,7 @@
 <colUsage columnID="84FB5E16-4D77-E8C9-D7D9-69EBA18AA174"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9A8E99D3-10AE-5CA4-E3E9-1A6FF6D9A698" name="IFK_DIS_DS">
+<ind_PK_UK id="9A8E99D3-10AE-5CA4-E3E9-1A6FF6D9A698" name="IFK_DIS_DS_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
@@ -156,7 +156,7 @@
 <colUsage columnID="D4F7CAF1-D2C3-3F4E-618C-E308C2B85D2A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="3791006B-B965-6620-D996-C4B721216D76" name="IFK_SG_SPECIAL">
+<ind_PK_UK id="3791006B-B965-6620-D996-C4B721216D76" name="IFK_SG_SPECIAL_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
@@ -168,7 +168,7 @@
 <colUsage columnID="C6375DA0-D315-A398-FEEF-009BC4313449"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7120F56A-11DB-B967-8DED-837199E7FF2B" name="IFK_TEACH_DS">
+<ind_PK_UK id="7120F56A-11DB-B967-8DED-837199E7FF2B" name="IFK_TEACH_DS_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>

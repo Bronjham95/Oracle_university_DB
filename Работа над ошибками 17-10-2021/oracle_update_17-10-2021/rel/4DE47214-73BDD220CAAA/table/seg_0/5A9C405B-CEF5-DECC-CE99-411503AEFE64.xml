@@ -93,7 +93,7 @@
 <colUsage columnID="2283635C-DDAA-25CD-FD96-11FCC4621CB0"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="28CB5D13-0BC6-7FA1-3EA3-F1FED68ED649" name="IFK_TEACH_PASS">
+<ind_PK_UK id="28CB5D13-0BC6-7FA1-3EA3-F1FED68ED649" name="IFK_TEACH_PASS_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
@@ -104,7 +104,7 @@
 <colUsage columnID="15822D01-7133-68D4-A57B-0F18635E5B3C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="885DBF39-2CFD-CAC7-C7C9-9927E5A7C083" name="IFK_TEACH_PER">
+<ind_PK_UK id="885DBF39-2CFD-CAC7-C7C9-9927E5A7C083" name="IFK_TEACH_PERSON_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-17 08:03:43 UTC</createdTime>
 <ownerDesignName>oracle_update_17-10-2021</ownerDesignName>
