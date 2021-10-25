@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43265C97-DB03-A233-473F-0762B502ECBE" name="STUDENT_GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>99562D01-197B-E41D-F6F7-7F84F61B19A5</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GROUP_ID" id="9F0474EA-605A-2177-6231-ACE47C262DD8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>ACCB9215-E737-282B-6E1A-1B2F83680E67</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROUP_NAME" id="6FAC43D0-4E16-440D-B266-679B2FD3F171">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>5E6CF374-6C36-606D-7AC9-588E36AD7ACC</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_ID" id="AE2D0A9D-7C6A-39B0-6173-0D9F6BDDEE52">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>DCCC9274-9BB3-CD64-B0EF-7730CBAEBE95</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9EE522E-21ED-0833-8B77-4DC69522E1D9" referredColumn="A682609B-409A-F1C7-B815-B65A63F1520D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A70A8E58-419A-F8DC-8028-EFFE21DEB9EC" name="STUDENT_GROUP_PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="9F0474EA-605A-2177-6231-ACE47C262DD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4ABD223-04EA-8FC0-3DCE-4D2AE2D26624" name="U_STUDENT_GROUP_SPEC_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>DBEE48AC-C9E4-E164-062E-B97ED68B952B</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F0474EA-605A-2177-6231-ACE47C262DD8"/>
+<colUsage columnID="AE2D0A9D-7C6A-39B0-6173-0D9F6BDDEE52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF8F510F-C16F-4CEF-EDEB-690B46C1F09C" name="STUDENT_GROUP__IDX">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C672B863-AD4E-93F1-CDA8-2A6F880BB593</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="AE2D0A9D-7C6A-39B0-6173-0D9F6BDDEE52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A42C27B-6724-0AF0-0FA4-7D37801A6A84" name="FK_SG_SPECIALIZATION">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>C672B863-AD4E-93F1-CDA8-2A6F880BB593</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE2D0A9D-7C6A-39B0-6173-0D9F6BDDEE52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

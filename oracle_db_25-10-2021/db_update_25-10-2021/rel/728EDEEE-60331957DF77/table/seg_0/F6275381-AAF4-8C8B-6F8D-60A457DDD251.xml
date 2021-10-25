@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6275381-AAF4-8C8B-6F8D-60A457DDD251" name="DISCIPLINE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>333A8EE4-940B-57C9-0774-0789015B55CF</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DIS_ID" id="56B823B4-919E-0999-7428-ECCA830A7260">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>863659CF-A0A2-5037-F592-5F9EA106BEC7</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIS_NAME" id="E9DBAA5A-3B8A-EFC8-76A1-CC4D0A056149">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>3BAD842B-6B33-932B-E47C-20B42FCA1F8A</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIME" id="D716BA8C-9EE0-1D98-36D5-04EB48A85B13">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>28449C6C-613C-FD0A-6735-850C519C6EAD</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TERM" id="3B59F242-4D4D-004F-F55B-233A567D63C8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>79B55735-07D9-596F-3C02-AF7E59F5955C</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_REPORT" id="BDF52E71-ED9D-4DC1-D004-133ABD0D8737">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>DB753A4D-46B6-6D74-361B-4259DF71F94E</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="412D7C59-D74A-07D1-2BF4-B7140A2EC4B0" name="PK_DISCIPLINE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>5C7556EA-3CAB-DE2A-94D7-926B7004742E</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B823B4-919E-0999-7428-ECCA830A7260"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2094A351-4F54-2881-8FC3-08FE0F94C973" name="STUDENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>8448B649-1DBF-AE34-111B-DD57F51142E1</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STUDENT_ID" id="C28DFA5B-771D-27FE-9D98-59557DBF494B">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>CA5E8375-F335-4825-C775-189393A604F5</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSON_ID" id="4B077F28-C8CF-676D-F3FC-64FF28E21D89">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>0AC6AEF4-939E-2915-2E53-16D7A3282710</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="106C48F5-33A1-652B-E864-017B7D2EE02F" referredColumn="3D6E6265-0A36-5977-3BDE-679ACC35F806"/>
+</associations>
+</Column>
+<Column name="PASS_ID" id="316DE65E-8FC9-9B52-DE3E-0C9CC57F35AA">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>5FEC98C9-DE56-2DCD-70BD-21F009428B8E</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AB1D535-5CF8-EB61-36F2-AD5C5182624D" referredColumn="4A45DF6A-701D-77DE-9389-4A7BC897956D"/>
+</associations>
+</Column>
+<Column name="BEGIN_DATE" id="D163481C-7F3A-962D-D749-FB00FC92FB0A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>5B4F01C7-080E-13EF-C9FD-7C34E89D01BB</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="174D81E6-7548-DDF6-CD7D-2B8C33DDF05E" name="PK_STUDENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>A3C279F0-08AA-FC83-1388-8C56BD9D4235</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C28DFA5B-771D-27FE-9D98-59557DBF494B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D92B2C0F-DF6C-9D10-03E3-B96125129BF6" name="I_STUDENT_PASS_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E2DD66C9-D3B8-F104-1CF3-F96813CFDDA1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="316DE65E-8FC9-9B52-DE3E-0C9CC57F35AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FE95707-D903-2B4E-AF0F-ABAEF1CF1D63" name="I_STUDENT_PERSON_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0E51DA98-EA4D-2E81-7519-B7A7984C7B54</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4B077F28-C8CF-676D-F3FC-64FF28E21D89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="92C50E05-CD6A-1B0D-2978-AC9CF55ECD24" name="FK_STUDENT_PASS">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>E2DD66C9-D3B8-F104-1CF3-F96813CFDDA1</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="316DE65E-8FC9-9B52-DE3E-0C9CC57F35AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42028CC5-B968-0CEF-BCFB-6D55FC44D5A5" name="FK_STUDENT_PERSON">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>0E51DA98-EA4D-2E81-7519-B7A7984C7B54</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B077F28-C8CF-676D-F3FC-64FF28E21D89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

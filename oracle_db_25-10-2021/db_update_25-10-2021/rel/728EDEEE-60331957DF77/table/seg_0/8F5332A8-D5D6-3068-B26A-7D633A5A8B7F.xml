@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F5332A8-D5D6-3068-B26A-7D633A5A8B7F" name="ACADEM_PER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>752A5FF1-000D-BA1A-A0B5-E1D5C9691D5E</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACADEM_ID" id="35ADC6D3-611E-4E82-75AC-126512DD1072">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="STUDENT_ID" id="38B44FD3-2944-B9DC-05E1-5F9347AAAB35">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>F70ACD3C-A966-18CC-1CAA-A7CA335900FE</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9B620561-97EE-DA60-4222-7C8C1506353F" referredColumn="C28DFA5B-771D-27FE-9D98-59557DBF494B"/>
+</associations>
+</Column>
+<Column name="POINT" id="682AB460-0C0F-7A48-88E7-0F645E45BE25">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>B1A8DC72-A94A-979C-7389-681303C545C9</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEST" id="AE023148-D22A-AE78-8FB6-6C7556226E70">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>5E402FA7-9888-4615-6952-FC2840227582</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="20E5B7F8-3501-BDC2-0D4C-B8B00B04355B" name="PK_AP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="35ADC6D3-611E-4E82-75AC-126512DD1072"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EA399016-A7BB-8CF3-0A14-34CF031CC7A5" name="U_ACADEM_PER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>D7122C61-9FEF-3BD7-0B9C-29BB8B6F12DF</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38B44FD3-2944-B9DC-05E1-5F9347AAAB35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA305B8C-4550-071A-2EFA-5056C79BADEA" name="I_AP_STUDENT_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2F6E9A01-86E2-BB26-95EB-EDDE5F2E974A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="38B44FD3-2944-B9DC-05E1-5F9347AAAB35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B76F02A1-AC3E-F3DB-356C-9D82F37DBE6A" name="FK_AP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>2F6E9A01-86E2-BB26-95EB-EDDE5F2E974A</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38B44FD3-2944-B9DC-05E1-5F9347AAAB35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

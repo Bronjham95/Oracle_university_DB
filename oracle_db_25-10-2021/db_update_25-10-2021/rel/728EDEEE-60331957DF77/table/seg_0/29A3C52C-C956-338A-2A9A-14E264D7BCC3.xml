@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29A3C52C-C956-338A-2A9A-14E264D7BCC3" name="DEPARTMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>98946D59-E9B1-D416-57C3-55F0FA70AF30</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEP_ID" id="392F580F-11DB-472F-B3B6-41854B918237">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>D2A13DAE-3357-661E-6563-9B7BFFEFBFCC</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INST_ID" id="6054101F-69BA-5282-CE8D-74BF2B9685CE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>D47E8E73-0490-41AE-AA60-867D595AA7AD</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBB5BB06-D3FF-5FBC-86EF-31A783845120" referredColumn="9DCFEAE7-3416-1D31-1CBA-B50DA6EC0169"/>
+</associations>
+</Column>
+<Column name="DEP_NAME" id="DE23EA8A-5446-2688-7805-3F4AACE2D3E5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>926D0D69-9123-25BD-1298-C9EF9F342292</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEP_HEAD" id="91BA7F73-71EA-2A0B-63F3-FD86552132A2">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>B518A11D-9120-C7A6-4C9E-92E7727A29BD</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0375F4EC-D160-70A2-DFCD-0399F008039D" name="PK_DEPARTMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="392F580F-11DB-472F-B3B6-41854B918237"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F141413-084E-908D-8066-5411ABCA2D62" name="U_DEPARTMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>7E6E7EA3-A0B9-8DE0-6E7D-41DC20A8C569</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6054101F-69BA-5282-CE8D-74BF2B9685CE"/>
+<colUsage columnID="392F580F-11DB-472F-B3B6-41854B918237"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3CB029D-6F9B-1CE2-D1FE-87F026C5936D" name="FK_DEP_INST">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-25 12:53:54 UTC</createdTime>
+<generatorID>1F6DFA70-C596-8E64-BC9A-04FA3FE3C4EB</generatorID>
+<ownerDesignName>db_update_25-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6054101F-69BA-5282-CE8D-74BF2B9685CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
