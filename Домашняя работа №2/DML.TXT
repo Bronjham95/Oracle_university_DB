@@ -1,0 +1,33 @@
+-- В качестве примера была выбрана таблица PERSON:
+-- ---------------------------------------------
+-- №1 (Создание таблицы)
+CREATE TABLE PERSON (
+    person_id    INTEGER NOT NULL,
+    firstname    VARCHAR2(30) NOT NULL,
+    lastname     VARCHAR2(30) NOT NULL,
+    patronimic   VARCHAR2(30),
+    fact_address VARCHAR2(50) NOT NULL
+);
+ -- №2 (Добавление PK)
+ALTER TABLE PERSON ADD CONSTRAINT PK_PERSON
+PRIMARY KEY (PERSON_ID);
+
+-- №3 (Переименовать колонку)
+ALTER TABLE PERSON 
+RENAME COLUMN FACT_ADDRESS TO F_ADDRESS;
+
+-- №4 (Создание неиспользованной колонки)
+ALTER TABLE PERSON
+SET UNUSED (F_ADDRESS);
+
+-- №5 (Удаление неиспользованных колонок)
+ALTER TABLE PERSON
+DROP UNUSED COLUMNS;
+
+-- №6 (Удаление данных из таблицы)
+DELETE FROM PERSON;
+
+--№7 (Создание последовательности)
+CREATE SEQUENCE SEQ_PERSON
+START WITH 1
+INCREMENT BY 1;

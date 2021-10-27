@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84E1C007-76EF-5C25-FB35-539C1D08C8C6" name="SPECIALIZATION">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>CFC2C13D-AB90-3063-9D6E-65546743B872</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SPEC_ID" id="0CC767E0-29F2-EAF3-1665-116399C6C127">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>D91E9C7C-13FC-A791-FEAA-83E0E63871EC</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_NAME" id="49E76C6E-9940-F821-837C-53A742CA4D93">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>4A48A4BF-DF6D-2441-22E9-F92B31C64847</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_LVL" id="63BFF530-6B6F-5272-DAAE-4A61D3216880">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>A5A1537F-0D9B-4501-CB06-C56C8882E4CE</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D83C4E6-475C-D3BB-EEDD-F98D99EF6F5F" name="PK_SPECIALIZATION">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>F433299C-B33B-466E-A975-0AEC2169955E</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CC767E0-29F2-EAF3-1665-116399C6C127"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

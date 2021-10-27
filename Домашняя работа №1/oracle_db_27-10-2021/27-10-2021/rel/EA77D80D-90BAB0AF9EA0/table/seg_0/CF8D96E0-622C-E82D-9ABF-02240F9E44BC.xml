@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF8D96E0-622C-E82D-9ABF-02240F9E44BC" name="PASSPORT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>B00E06B5-2467-DE17-4724-C3C194A3D18F</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PASS_ID" id="E93AF608-778E-8807-FFC8-CE1785B4AA6A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>1E0B7470-6076-1531-7AAE-99CBAE1CE1EA</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASS_NUM" id="E69DFA6D-347C-261F-2EA1-CFDB1C2A87C9">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>CFA08130-7E3D-7A8F-E0A5-BC595AC00124</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASS_SN" id="326B056A-EAB7-06AD-BB44-EF24D0FE73B8">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>EDB8793A-78C1-2A1F-3311-6ACF16BC3792</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASS_REG" id="7B30F209-23CC-B0EA-07D2-097F75CFF8D7">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>6181AAE1-EFE4-47C2-2DB4-ADA260BA60FA</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D01653A6-6A7C-FDC1-3A93-7A000994B094" name="PK_PASSPORT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>9C3DCEAB-604A-331E-C4DE-D7CC3E0C0906</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E93AF608-778E-8807-FFC8-CE1785B4AA6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

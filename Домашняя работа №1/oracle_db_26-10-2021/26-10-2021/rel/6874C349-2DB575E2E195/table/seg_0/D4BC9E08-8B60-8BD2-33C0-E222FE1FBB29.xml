@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4BC9E08-8B60-8BD2-33C0-E222FE1FBB29" name="DEPARTMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>98946D59-E9B1-D416-57C3-55F0FA70AF30</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_ID" id="9EB7BB96-DE26-BBCF-093A-DD5F792CF942">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="INSTITUTE_ID" id="4DEA8F99-896D-C6E7-35B8-3B515DE1C2A5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>D47E8E73-0490-41AE-AA60-867D595AA7AD</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7BDCF520-056C-D8C0-35B7-B89C415A3633" referredColumn="04D378AE-2696-9E4A-AAD8-921D330908D2"/>
+</associations>
+</Column>
+<Column name="DEP_NAME" id="85B2D49C-00FE-3484-CCAC-8087C846D0C9">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>926D0D69-9123-25BD-1298-C9EF9F342292</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEP_HEAD" id="1A4EAD06-80ED-79E1-494C-0E9B4E0A639A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>B518A11D-9120-C7A6-4C9E-92E7727A29BD</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DCB660F-7A3B-9A1A-95E9-EB8CCA15ECA7" name="PK_DEPARTMENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="9EB7BB96-DE26-BBCF-093A-DD5F792CF942"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0313F6F-829C-1843-8630-2854725222EA" name="U_DEPARTMENT_INST_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>7E6E7EA3-A0B9-8DE0-6E7D-41DC20A8C569</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DEA8F99-896D-C6E7-35B8-3B515DE1C2A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72E3CC9C-079F-FEE4-E40B-450131E7E68A" name="IFK_DEPARTMENT_INSTITUTE_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:42:36 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DEA8F99-896D-C6E7-35B8-3B515DE1C2A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B096BC7-BD7B-27DE-FDD7-842C10F4AFE7" name="FK_DEPARTMENT_INSTITUTE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>1F6DFA70-C596-8E64-BC9A-04FA3FE3C4EB</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DEA8F99-896D-C6E7-35B8-3B515DE1C2A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

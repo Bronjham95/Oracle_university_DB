@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7837A2B0-F8E5-B13E-6EE8-F143BBA12B38" name="STUDENT_GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>99562D01-197B-E41D-F6F7-7F84F61B19A5</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GROUP_ID" id="C053F723-3240-AC0E-3CD3-82E8A244C945">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>ACCB9215-E737-282B-6E1A-1B2F83680E67</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GROUP_NAME" id="87A0B76A-5ABD-EA9F-14CE-AF0D1371D90A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>5E6CF374-6C36-606D-7AC9-588E36AD7ACC</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SPEC_ID" id="15CB227A-523F-E6A0-2138-F9620B76A32B">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>DCCC9274-9BB3-CD64-B0EF-7730CBAEBE95</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77141C39-07CA-CCCF-0E39-F719AD384A78" referredColumn="0CC767E0-29F2-EAF3-1665-116399C6C127"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71DA80C7-9F12-B78A-2B43-973498FB51DF" name="PK_STUDENT_GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>DBEE48AC-C9E4-E164-062E-B97ED68B952B</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C053F723-3240-AC0E-3CD3-82E8A244C945"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3326E469-CEDB-3A01-E622-C5DF0A0B9712" name="IFK_SG_SPEC_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C672B863-AD4E-93F1-CDA8-2A6F880BB593</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="15CB227A-523F-E6A0-2138-F9620B76A32B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F53E7A21-D813-90DC-216C-353EA8D063F2" name="FK_SG_SPEC">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>C672B863-AD4E-93F1-CDA8-2A6F880BB593</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15CB227A-523F-E6A0-2138-F9620B76A32B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

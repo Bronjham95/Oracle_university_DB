@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9457AFC-D129-F6E3-B198-7B4398234346" name="DEPARTMENT_SHEET">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:21:24 UTC</createdTime>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DS_ID" id="619E9805-D9E7-1232-78A2-F5C542795797">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 07:24:59 UTC</createdTime>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIS_ID" id="99318E0E-46EC-0F4B-7BBF-4D724CD926FC">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:35:11 UTC</createdTime>
+<generatorID>8B396CEC-F77C-F166-2C78-AB9229EC40FE</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<referedAttribute>863659CF-A0A2-5037-F592-5F9EA106BEC7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TEACHER_ID" id="37888741-73E0-F8B5-725C-2630BB04001E">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:11:37 UTC</createdTime>
+<generatorID>3083DC61-F52B-D099-8FF3-2C1404D84A23</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<referedAttribute>7E375DA1-DEAF-5590-8F19-05FF8C6BAFA9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GROUP_ID" id="A774CB3B-6DE3-962B-39FF-197A2AC5947C">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:25:59 UTC</createdTime>
+<generatorID>4EA2381A-8E6A-672A-349A-40F6A9D90F48</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<referedAttribute>ACCB9215-E737-282B-6E1A-1B2F83680E67</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AP_ID" id="30F0B677-6EA1-FC9B-692C-87480B284539">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 07:21:11 UTC</createdTime>
+<generatorID>C6F90FEA-2E5C-FCE7-E8C2-43B958E8D07F</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<referedAttribute>414EB685-4EC4-6D87-7EB9-FB3609C8D318</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E267CD4-B35C-9602-A7D1-A0A0B50C8D70" name="DEPARTMENT_SHEET PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 07:36:55 UTC</createdTime>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<engineerTo>
+<item key="EA77D80D-CD79-65B5-5D86-90BAB0AF9EA0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>619E9805-D9E7-1232-78A2-F5C542795797</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

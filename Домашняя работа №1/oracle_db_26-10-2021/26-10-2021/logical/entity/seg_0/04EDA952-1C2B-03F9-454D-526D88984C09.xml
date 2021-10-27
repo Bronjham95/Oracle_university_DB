@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="04EDA952-1C2B-03F9-454D-526D88984C09" name="TEACHER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:01:40 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TEACHER_ID" id="7E375DA1-DEAF-5590-8F19-05FF8C6BAFA9">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:01:49 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSON_ID" id="123DE9CF-EB52-E420-E3F2-B6D43E55BDE2">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:29:38 UTC</createdTime>
+<generatorID>4E0E0890-A4C3-091B-49DD-A3BCD62408D6</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<referedAttribute>BBAA0405-B41D-6472-AB01-078898A2AA2B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PASS_ID" id="EBA8D1BB-39AE-0F8D-C5E1-C0169FDD3658">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 08:00:01 UTC</createdTime>
+<generatorID>5CF32CA1-A9D8-5713-5F86-9433588095B8</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<referedAttribute>1E0B7470-6076-1531-7AAE-99CBAE1CE1EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POSITION" id="2BE57984-932D-25CF-3706-C3F5BA3EDD24">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-17 07:49:48 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AC_DEGREE" id="CAE21A4D-7C33-86F7-7DFA-3281914BB61F">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-15 18:01:49 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INST_ID" id="BB14EEAB-1414-F048-EFF9-390D829B0A34">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-24 20:57:28 UTC</createdTime>
+<generatorID>4DF1F19C-5040-1B86-E340-491A3DE52AC4</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<referedAttribute>D47E8E73-0490-41AE-AA60-867D595AA7AD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C0BB1294-0A6C-6EBE-B73C-53FEAD18CB69" name="TEACHER PK">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-24 20:58:48 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<engineerTo>
+<item key="6874C349-5415-B295-6B0D-2DB575E2E195" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7E375DA1-DEAF-5590-8F19-05FF8C6BAFA9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

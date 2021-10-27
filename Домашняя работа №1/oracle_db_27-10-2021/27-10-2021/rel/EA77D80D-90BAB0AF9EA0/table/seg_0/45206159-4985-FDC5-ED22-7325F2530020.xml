@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="45206159-4985-FDC5-ED22-7325F2530020" name="DEPARTMENT_SHEET">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>E9457AFC-D129-F6E3-B198-7B4398234346</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DS_ID" id="97EFA09F-28F5-2C09-CA33-8BD4F2E3A827">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>619E9805-D9E7-1232-78A2-F5C542795797</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCIPLINE_DIS_ID" id="9CAD0AE4-0C1D-4DBF-58A1-397AD0B9CDEA">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>99318E0E-46EC-0F4B-7BBF-4D724CD926FC</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2EE789F-7329-48C9-4F07-C1989DC06C8B" referredColumn="A6B126B2-62E6-9828-C1C1-1AD364114A34"/>
+</associations>
+</Column>
+<Column name="TEACHER_TEACHER_ID" id="DD492B28-7B39-DCEA-FE6E-D05B99CB44B5">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>37888741-73E0-F8B5-725C-2630BB04001E</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="559F7BF2-544A-0D9D-1897-6C7E4A1FECEA" referredColumn="10B8444D-F55F-4EAD-BDBF-EFC2CA1A5F84"/>
+</associations>
+</Column>
+<Column name="STUDENT_GROUP_GROUP_ID" id="5692CBE5-23A9-EBEF-1737-9343C6910E2B">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>A774CB3B-6DE3-962B-39FF-197A2AC5947C</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD153562-8E39-3366-2C07-CF08544DF468" referredColumn="9D54CC31-CCDF-7883-970F-F38CC176CD46"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF693AAC-3D61-0F19-F7C6-85974F7FAA07" name="PK_DEPARTMENT_SHEET">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>1E267CD4-B35C-9602-A7D1-A0A0B50C8D70</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97EFA09F-28F5-2C09-CA33-8BD4F2E3A827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9074EE90-9B70-8564-06EF-CDFE972D930A" name="IFK_DS_DIS_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8B396CEC-F77C-F166-2C78-AB9229EC40FE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9CAD0AE4-0C1D-4DBF-58A1-397AD0B9CDEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FD505D1-3BBC-81F7-170E-9CEF0FD604EB" name="IFK_DS_GROUP_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4EA2381A-8E6A-672A-349A-40F6A9D90F48</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5692CBE5-23A9-EBEF-1737-9343C6910E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51EF0BE0-FA55-ABCB-C2E9-41147CB11D08" name="IFK_DS_TEACHER_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3083DC61-F52B-D099-8FF3-2C1404D84A23</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DD492B28-7B39-DCEA-FE6E-D05B99CB44B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F95CC87A-A15A-65BA-A058-DED605B30E60" name="FK_DS_DISCIPLINE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>8B396CEC-F77C-F166-2C78-AB9229EC40FE</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CAD0AE4-0C1D-4DBF-58A1-397AD0B9CDEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="14C07FD6-310A-D740-6365-1BA4DA615919" name="FK_DS_STUDENT_GROUP">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>4EA2381A-8E6A-672A-349A-40F6A9D90F48</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5692CBE5-23A9-EBEF-1737-9343C6910E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53F21742-E81A-F837-74A8-B0846E5F5B2F" name="FK_DES_TEACHER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-27 08:01:25 UTC</createdTime>
+<generatorID>3083DC61-F52B-D099-8FF3-2C1404D84A23</generatorID>
+<ownerDesignName>27-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD492B28-7B39-DCEA-FE6E-D05B99CB44B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

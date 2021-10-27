@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="644BA1C2-CC74-7266-04BC-748B64EA9F86" name="ACADEM_PER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>752A5FF1-000D-BA1A-A0B5-E1D5C9691D5E</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACADEM_PER_ID" id="D61BB220-1FDD-BB84-1697-FA2C104AF4CE">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="STUDENT_ID" id="C8286C4F-75E8-9CF3-CE7E-5731B0357EE2">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>F70ACD3C-A966-18CC-1CAA-A7CA335900FE</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B6DDC87-B621-894D-913F-B5A94CC26B27" referredColumn="47CF54F6-6E2B-03B6-7AFB-5BF26047DC56"/>
+</associations>
+</Column>
+<Column name="POINT" id="560E037D-D2D5-C68D-3678-E398CCC492EF">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>B1A8DC72-A94A-979C-7389-681303C545C9</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TEST" id="5C0C8048-4540-005A-6A46-8CA79ADDFA6A">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>5E402FA7-9888-4615-6952-FC2840227582</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CE7B782-EC08-BC49-7A9F-D8F1F2E2F581" name="PK_ACADEM_PER">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D61BB220-1FDD-BB84-1697-FA2C104AF4CE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38B60C95-4C5C-0CF5-A700-4142401EBA8A" name="U_AP_STUDENT_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>D7122C61-9FEF-3BD7-0B9C-29BB8B6F12DF</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8286C4F-75E8-9CF3-CE7E-5731B0357EE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F574B576-818D-356A-E314-D01F9F32322D" name="IFK_ACADEM_PER_STUDENT_ID">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:45:33 UTC</createdTime>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8286C4F-75E8-9CF3-CE7E-5731B0357EE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22F9D859-8CD2-F81F-8E19-741069055BED" name="FK_ACADEM_PER_STUDENT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>2F6E9A01-86E2-BB26-95EB-EDDE5F2E974A</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8286C4F-75E8-9CF3-CE7E-5731B0357EE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

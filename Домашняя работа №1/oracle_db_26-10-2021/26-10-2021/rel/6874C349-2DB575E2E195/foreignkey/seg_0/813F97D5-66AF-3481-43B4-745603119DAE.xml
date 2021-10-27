@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="813F97D5-66AF-3481-43B4-745603119DAE" containerWithKeyObject="DC6CCBCD-58A5-61E2-CA0A-83CDB52B09DB" localFKIndex="01C0223F-B7F8-717D-14D1-A49C6A51A0DF" name="FK_TEACHER_PASSPORT">
+<createdBy>Viktor</createdBy>
+<createdTime>2021-10-26 16:27:52 UTC</createdTime>
+<generatorID>5CF32CA1-A9D8-5713-5F86-9433588095B8</generatorID>
+<ownerDesignName>26-10-2021</ownerDesignName>
+<referredTableLongName>PASSPORT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A997A2A7-4539-7624-0EE4-14DE658AE22A</referredTableID>
+<keyObject>D103BA1F-85B4-DCB1-D88F-66FC4CBD82BE</keyObject>
+<referredKeyID>D103BA1F-85B4-DCB1-D88F-66FC4CBD82BE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PASS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
