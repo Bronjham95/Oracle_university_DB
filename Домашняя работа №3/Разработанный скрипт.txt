@@ -1,0 +1,225 @@
+-- Создание таблицы PERSON_TEST: (тестовой)
+-- -------------------------------------------
+CREATE TABLE person_test (
+    person_id    INTEGER PRIMARY KEY,
+    firstname    VARCHAR2(50) NOT NULL,
+    lastname     VARCHAR2(50) NOT NULL,
+    patronimic   VARCHAR2(50),
+    fact_address VARCHAR2(150) NOT NULL
+);
+
+
+-- Создание последовательности для PERSON_TEST:
+-- -------------------------------------------
+CREATE sequence seq_person_test
+    start with 1
+    increment by 1;
+
+
+-- Создание триггера для PERSON_TEST:
+-- -------------------------------------------
+CREATE trigger t_b_person_test
+    before insert on person_test for each row
+	begin
+  		select seq_person_test.nextval
+  		into :new.person_id 
+  		from dual;
+	end; 
+
+
+-- Создание спецификации пакета PERSON_TEST:
+-- ------------------------------------
+CREATE OR REPLACE PACKAGE PKG_PERSON_TEST AS
+    
+    --#1 ДОБАВЛЕНИЕ PERSON
+    PROCEDURE addPerson(
+        p_firstname    person_test.firstname%TYPE, 
+        p_lastname     person_test.lastname%TYPE, 
+        p_patronimic   person_test.patronimic%TYPE, 
+        p_fact_address person_test.fact_address%TYPE
+        );
+    
+    --#2 УДАЛЕНИЕ PERSON
+    PROCEDURE delPerson(
+        p_person_id person_test.person_id%TYPE
+        );
+    
+    --#3 КОНВЕЙЕРНАЯ ФУНКЦИЯ
+    TYPE T_PERSON_TEST_ROW IS RECORD (
+        PERSON_ID INTEGER,
+        FIRSTNAME VARCHAR2(50),
+        LASTNAME VARCHAR2(50),
+        PATRONOMIC VARCHAR2(50),
+        FACT_ADDRESS VARCHAR2(150),
+        SID NUMBER
+    );
+        
+        TYPE T_PERSON_TEST_TAB 
+            IS TABLE OF T_PERSON_TEST_ROW;
+        
+        TYPE T_PERSON_TEST_REF_CURSOR 
+            IS REF CURSOR RETURN PERSON_TEST%ROWTYPE;
+        
+    FUNCTION TEST_PTF(P_CURSOR IN T_PERSON_TEST_REF_CURSOR)
+        RETURN T_PERSON_TEST_TAB PIPELINED
+            PARALLEL_ENABLE(PARTITION P_CURSOR BY ANY);
+    
+END PKG_PERSON_TEST;
+
+
+-- Создание тела пакета PERSON_TEST:
+-- ---------------------------------------
+CREATE OR REPLACE PACKAGE BODY PKG_PERSON_TEST AS
+   
+   -- #1 Добавление человека: 
+   -- Добавление в таблицу PERSON, но можно воспользоваться INSERT-ами из д/з №2 (удалив ID, т.к. теперь генерируется через триггер)
+   -- -------------------------------------------
+    PROCEDURE addPerson(
+        p_firstname person_test.firstname%TYPE, 
+        p_lastname person_test.lastname%TYPE, 
+        p_patronimic person_test.patronimic%TYPE, 
+        p_fact_address person_test.fact_address%TYPE
+        )
+    IS
+            -- Добавление наименованного системного исключения
+            E_NULL EXCEPTION;
+            PRAGMA EXCEPTION_INIT(E_NULL, -01400);
+        BEGIN
+            INSERT INTO PERSON_TEST (FIRSTNAME, LASTNAME, PATRONIMIC, FACT_ADDRESS)
+                VALUES(P_FIRSTNAME, P_LASTNAME, P_PATRONIMIC, P_FACT_ADDRESS);
+        EXCEPTION
+            WHEN E_NULL THEN
+            DBMS_OUTPUT.PUT_LINE('NULL значения недопустимы!');
+    END addPerson;
+    
+     
+    -- #2 Удаление человека
+    -- Удаление из таблицы PERSON по ID.
+    -- Исключения: если ID = 0 и если ID > 0.
+    PROCEDURE delPerson(p_person_id person_test.person_id%TYPE)
+    IS    
+	-- Добавление пользовательских исключений
+         E_NO_ID EXCEPTION;
+         E_GOOD_ID EXCEPTION;
+    BEGIN
+        IF P_PERSON_ID = 0 THEN
+        RAISE E_NO_ID;
+        END IF;
+        
+        IF P_PERSON_ID > 0 THEN
+        DELETE FROM PERSON_TEST
+            WHERE PERSON_ID = P_PERSON_ID;
+            DBMS_OUTPUT.put_line (SQLERRM ());
+            --RAISE E_GOOD_ID;
+            END IF;
+    EXCEPTION
+    WHEN E_NO_ID THEN
+    RAISE_APPLICATION_ERROR(-20100, 'Введите id > 0');
+    
+    --WHEN E_GOOD_ID THEN
+    --RAISE_APPLICATION_ERROR(00000, 'Все хорошо!');
+    --DBMS_OUTPUT.put_line (SQLERRM ());
+    END delPerson;
+    
+    -- #3 Конвейерная функция 
+    FUNCTION TEST_PTF (P_CURSOR IN T_PERSON_TEST_REF_CURSOR)
+        RETURN T_PERSON_TEST_TAB PIPELINED
+            PARALLEL_ENABLE(PARTITION P_CURSOR BY ANY)
+    IS 
+        F_ROW T_PERSON_TEST_ROW;
+    BEGIN 
+        LOOP
+            FETCH P_CURSOR
+            INTO F_ROW.PERSON_ID,
+                 F_ROW.FIRSTNAME,
+                 F_ROW.LASTNAME,
+                 F_ROW.PATRONOMIC,
+                 F_ROW.FACT_ADDRESS;
+            EXIT WHEN P_CURSOR%NOTFOUND;
+            
+            SELECT SID
+            INTO F_ROW.SID
+            FROM v$mystat
+            WHERE ROWNUM = 1;
+            
+            PIPE ROW (F_ROW);
+        END LOOP;
+        RETURN;
+        END TEST_PTF;
+        
+  
+    END PKG_PERSON_TEST;
+    
+    -- Создание таблицы, последовательности и триггера (по подобию)
+    -- Создание спецификации пакета STUDENT_TEST (для объединения)
+CREATE OR REPLACE PACKAGE PKG_STUDENT_TEST AS
+
+    --#3 КОНВЕЙЕРНАЯ ФУНКЦИЯ
+    TYPE T_STUDENT_TEST_ROW IS RECORD (
+        STUDENT_ID INTEGER,
+        PERSON_ID INTEGER,
+        PASS_ID INTEGER,
+        BEGIN_DATE DATE,
+        SID NUMBER
+    );
+        TYPE T_STUDENT_TEST_TAB 
+            IS TABLE OF T_STUDENT_TEST_ROW;
+        
+        TYPE T_STUDENT_TEST_REF_CURSOR 
+            IS REF CURSOR RETURN STUDENT_TEST%ROWTYPE;
+        
+    FUNCTION TEST2_PTF(P_CURSOR IN T_STUDENT_TEST_REF_CURSOR)
+        RETURN T_STUDENT_TEST_TAB PIPELINED
+            PARALLEL_ENABLE(PARTITION P_CURSOR BY ANY);
+    
+END PKG_STUDENT_TEST;
+
+
+-- Создание тела пакета STUDENT_TEST:
+-- ---------------------------------------
+CREATE OR REPLACE PACKAGE BODY PKG_STUDENT_TEST AS
+ 
+    -- ---------------------------------------
+    -- #3 Конвейерная функция 
+    FUNCTION TEST2_PTF (P_CURSOR IN T_STUDENT_TEST_REF_CURSOR)
+        RETURN T_STUDENT_TEST_TAB PIPELINED
+        PARALLEL_ENABLE(PARTITION P_CURSOR BY ANY)
+    IS 
+        F_ROW T_STUDENT_TEST_ROW;
+    BEGIN 
+        LOOP
+            FETCH P_CURSOR
+            INTO F_ROW.STUDENT_ID,
+                 F_ROW.PERSON_ID,
+                 F_ROW.PASS_ID,
+                 F_ROW.BEGIN_DATE;
+            EXIT WHEN P_CURSOR%NOTFOUND;
+            
+            SELECT SID
+            INTO F_ROW.SID
+            FROM v$mystat
+            WHERE ROWNUM = 1;
+            
+            PIPE ROW (F_ROW);
+        END LOOP;
+        RETURN;
+        END TEST2_PTF;
+        
+    END PKG_STUDENT_TEST;
+    
+    -- Вывод результирующей таблицы (объединение (PERSON и STUDENT), сортировка (по имени), фильтрация через LIKE (студенты из Волгограда, а не из другого города):
+    SELECT STUDENT_ID, FIRSTNAME, LASTNAME, PATRONOMIC, FACT_ADDRESS FROM 
+    TABLE(PKG_PERSON_TEST.test_ptf(CURSOR(SELECT * FROM PERSON_TEST t1))) Z1 
+    INNER JOIN 
+    TABLE(PKG_STUDENT_TEST.test2_ptf(CURSOR(SELECT * FROM STUDENT_TEST t2)))Z2
+    ON  Z1.PERSON_ID = Z2.PERSON_ID WHERE FACT_ADDRESS LIKE '%ВОЛГОГРАД%'
+    ORDER BY FIRSTNAME;
+
+-- PL/SQL проверка (заготовка):
+----------------------------------------------      
+DECLARE CODE person_test.person_id%TYPE := введи id; 
+BEGIN 
+--pkg_person_test.delperson(CODE); 
+--pkg_person_test.addperson('TEST', 'TEST', 'TEST', 'TEST_ADDRESS');
+END;
+/
