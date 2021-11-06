@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DEPARTMENT_SHEET_DS_ID" id="92362AA1-231E-E457-3D22-A7C98F8B68D8">
+<Column name="DEPARTMENT_SHEET_ID" id="92362AA1-231E-E457-3D22-A7C98F8B68D8">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <generatorID>78EA7E59-53C3-C938-E7BB-8D7C5C753FBF</generatorID>
@@ -34,7 +34,7 @@
 <colAssociation fkAssociation="C5BA08A6-45E4-562B-3ED3-AD1E83102FF1" referredColumn="97EFA09F-28F5-2C09-CA33-8BD4F2E3A827"/>
 </associations>
 </Column>
-<Column name="STUDENT_STUDENT_ID" id="ACAD12C1-6A46-A101-CDDE-DE3A11751CCB">
+<Column name="STUDENT_ID" id="ACAD12C1-6A46-A101-CDDE-DE3A11751CCB">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <generatorID>3F57493E-B503-DF63-5164-A375CE8AB308</generatorID>
@@ -75,7 +75,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D0C708B1-38FF-21FD-ACA1-1393D1A94AF4" name="AP_ACADEM_PER">
+<ind_PK_UK id="D0C708B1-38FF-21FD-ACA1-1393D1A94AF4" name="PK_ACADEM_PER">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <generatorID>2A5D3490-3BA1-2C52-43D8-8A75AAC27597</generatorID>
@@ -87,7 +87,7 @@
 <colUsage columnID="5455008D-8FBC-A216-4E73-20EEA16964E4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="944F3B62-CB05-2950-7E62-51F135C35707" name="ACADEM_PER__IDX">
+<ind_PK_UK id="944F3B62-CB05-2950-7E62-51F135C35707" name="IFK_AP_DEP_SHEET_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <ownerDesignName>27-10-2021</ownerDesignName>
@@ -98,7 +98,7 @@
 <colUsage columnID="92362AA1-231E-E457-3D22-A7C98F8B68D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EDB1664B-DF50-7A59-BA97-C7145AE43539" name="ACADEM_PER__IDXv1">
+<ind_PK_UK id="EDB1664B-DF50-7A59-BA97-C7145AE43539" name="IFK_AP_STUDENT_ID">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <ownerDesignName>27-10-2021</ownerDesignName>
@@ -109,7 +109,7 @@
 <colUsage columnID="ACAD12C1-6A46-A101-CDDE-DE3A11751CCB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="9366B23C-8EDC-8542-9ECC-A6AAE20F74FE" name="ACADEM_PER_DEPARTMENT_SHEET_FK">
+<ind_PK_UK id="9366B23C-8EDC-8542-9ECC-A6AAE20F74FE" name="FK_AP_DEPARTMENT_SHEET">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <generatorID>0D7D99AD-31FD-F43C-0F6D-88FEA00569F5</generatorID>
@@ -120,7 +120,7 @@
 <colUsage columnID="92362AA1-231E-E457-3D22-A7C98F8B68D8"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5F3C25F8-E3A1-78D0-1BFB-73AE95A5D3C1" name="ACADEM_PER_STUDENT_FK">
+<ind_PK_UK id="5F3C25F8-E3A1-78D0-1BFB-73AE95A5D3C1" name="FK_AP_STUDENT">
 <createdBy>Viktor</createdBy>
 <createdTime>2021-10-27 08:01:25 UTC</createdTime>
 <generatorID>7D021A77-2160-B765-8D80-5EE58B87B91D</generatorID>

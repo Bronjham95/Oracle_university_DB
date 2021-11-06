@@ -1,0 +1,35 @@
+-- №1
+-- Подключился через SQL Dev
+
+-- №2 
+-- Параметры СУБД
+select * from dictionary;
+select * from dba_objects
+
+-- Объекты пользователя / Доступные пользователю объекты
+select * from user_source;
+select owner, object_name, object_type from ALL_OBJECTS
+where OWNER = 'OWNER_NAME';
+
+-- №3
+-- При помощи словаря данных сгенерировать DDL:
+SELECT DBMS_METADATA.GET_DDL('TABLE', 'PERSON', 'TEST') FROM DUAL; 
+SELECT DBMS_METADATA.GET_DDL('PACKAGE', 'PKG_PERSON', 'TEST') FROM DUAL;
+
+-- №4 
+-- Написать функцию: (Честно, не знал как иначе написать), на скорую руку как-то так это выглядит.
+ CREATE FUNCTION addObject(f_object_type IN VARCHAR2, f_object_name IN VARCHAR2, f_owner IN VARCHAR2 DEFAULT NULL)
+    RETURN CLOB IS
+    STR CLOB;
+BEGIN 
+ STR := DBMS_METADATA.GET_DDL(f_object_type, f_object_name, f_owner);
+    RETURN STR;
+END;
+
+DECLARE 
+STR CLOB;
+BEGIN
+STR := addobject('TABLE', 'STUDENT', 'TEST');
+DBMS_OUTPUT.PUT_LINE(STR);
+END;
+
