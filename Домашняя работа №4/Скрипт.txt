@@ -19,6 +19,8 @@ SELECT DBMS_METADATA.GET_DDL('PACKAGE', 'PKG_PERSON', 'TEST') FROM DUAL;
 -- №4 
 -- Написать функцию: (Честно, не знал как иначе написать), на скорую руку как-то так это выглядит.
 -- Есть еще черновой другой вариант реализации, но до ума не довел еще.
+
+-- Халтурный вариант:
  CREATE FUNCTION addObject(f_object_type IN VARCHAR2, f_object_name IN VARCHAR2, f_owner IN VARCHAR2 DEFAULT NULL)
     RETURN CLOB IS
     STR CLOB;
@@ -27,6 +29,44 @@ BEGIN
     RETURN STR;
 END;
 
+-- Не доведенный до ума:
+CREATE 
+    FUNCTION addObject(
+                f_object_type IN VARCHAR2, 
+                f_object_name IN VARCHAR2,  
+                f_owner IN VARCHAR2 DEFAULT NULL)
+    RETURN CLOB
+        IS
+        v_result CLOB;
+        v_count INTEGER;
+        E_DUBLICATE EXCEPTION;
+    BEGIN
+
+        SELECT COUNT_COPY INTO v_count 
+            FROM (SELECT object_name, COUNT(object_name) AS COUNT_COPY
+                FROM all_objects
+                    WHERE owner_name = f_object_name
+                        AND object_name = f_object_name
+                            GROUP BY object_name
+                                HAVING COUNT(object_name) > 1)
+                                    WHERE object_name = f_object_name;
+                                        RAISE E_DUBLICATE;
+    IF v_count = 1
+        THEN 
+            SELECT DBMS_METADATA.GET_DDL(f_object_type, f_object_name, f_owner) 
+                FROM DBA_OBJECTS
+                    WHERE OWNER = F_OWNER AND
+                        OBJECT_NAME = F_OBJECT_NAME;
+    END IF;
+    
+    EXCEPTION
+        WHEN E_DUPLICATE THEN
+            RAISE_APPLICATION_ERROR('Исключение: Дублирование объектов!');
+END addObject;
+          
+-- ----------------------------------------
+Запуск функции: (халтурной)
+-- ---------------------------------------
 DECLARE 
 STR CLOB;
 BEGIN
