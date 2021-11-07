@@ -43,5 +43,3 @@ STR := addobject('TABLE', 'STUDENT', 'TEST');
 DBMS_OUTPUT.PUT_LINE(STR);
 END;
 
-select * from dictionary;
-

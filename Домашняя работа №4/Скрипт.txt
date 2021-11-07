@@ -18,6 +18,7 @@ SELECT DBMS_METADATA.GET_DDL('PACKAGE', 'PKG_PERSON', 'TEST') FROM DUAL;
 
 -- №4 
 -- Написать функцию: (Честно, не знал как иначе написать), на скорую руку как-то так это выглядит.
+-- Есть еще черновой другой вариант реализации, но до ума не довел еще.
  CREATE FUNCTION addObject(f_object_type IN VARCHAR2, f_object_name IN VARCHAR2, f_owner IN VARCHAR2 DEFAULT NULL)
     RETURN CLOB IS
     STR CLOB;
