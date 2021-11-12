@@ -1,0 +1,317 @@
+drop FUNCTION table_DDL;
+drop FUNCTION index_DDL;
+drop FUNCTION sequence_DDL;
+drop FUNCTION trigger_DDL;
+drop FUNCTION package_DDL;
+
+-- FOR TABLE:
+-- ----------------------------------------------------------------------------
+
+CREATE FUNCTION table_DDL(  f_owner in varchar2, 
+                            f_object_name in varchar2, 
+                            f_object_type in varchar2 )
+                            return CLOB
+                                        IS
+           -- Создание курсора:
+            CURSOR cur_table IS
+                SELECT c1.table_name, c1.column_name, c1.data_type, c1.data_length
+                    FROM user_tab_columns c1
+                        WHERE c1.table_name = f_object_name;
+                                  
+            -- Объявление переменных:
+            v_result clob;
+            v_table_name varchar2(20);
+            v_column_name varchar2(20);
+            v_data_type varchar2(20);
+            v_data_length varchar2(20);
+            v_constraint_name varchar2(20);
+
+        BEGIN        
+        -- Вывод таблицы:
+        v_result := 'CREATE TABLE ' || f_object_name ||' (' || chr(10);
+            OPEN cur_table;
+                LOOP
+                    FETCH cur_table
+                        INTO v_table_name, v_column_name, v_data_type, v_data_length;
+                            EXIT WHEN cur_table%notfound;
+            
+            v_result := concat(v_result, chr(10) || v_column_name || ' '|| v_data_type   ||
+                                             '(' || v_data_length || ')'|| chr(10));
+                END LOOP;
+                    --dbms_output.put_line(v_result || ' );');
+                     v_result := substr(v_result, 1, length(v_result) - 2)
+                 || chr(10)
+                 || '));'
+                 || chr(10);
+      
+    v_result :=  v_result 
+                 || 'ALTER TABLE '
+                 || v_table_name
+                 || ' ADD CONSTRAINT PK_'
+                 || v_table_name
+                 || ' PRIMARY KEY ( '
+                 || v_column_name
+                 || ');';
+        dbms_output.put_line(v_result);
+                  RETURN v_result;
+        END table_DDL;
+        
+        -- Анонимный блок:
+        DECLARE 
+            c CLOB;
+        BEGIN
+            c := table_DDL('TEST', 'PERSON', 'TABLE');
+        END;
+        /
+-- -----------------------------------------------------------------------------
+/* Результат работы:
+CREATE TABLE PERSON (
+
+FIRSTNAME VARCHAR2(60)
+
+LASTNAME VARCHAR2(60)
+
+PATRONIMIC VARCHAR2(80)
+
+FACT_ADDRESS VARCHAR2(150)
+
+PERSON_ID NUMBER(22)
+ );
+ 
+ALTER TABLE PERSON ADD CONSTRAINT PK_ PRIMARY KEY ( PERSON_ID);
+*/
+
+-- FOR INDEX:
+-- ----------------------------------------------------------------------------
+CREATE FUNCTION index_DDL ( f_owner in varchar2, 
+                            f_object_name in varchar2, 
+                            f_object_type in varchar2 )
+                            return CLOB 
+                                        IS
+        -- Создание курсора:
+        CURSOR cur_idx IS
+            SELECT I2.table_owner, I2.table_name, I2.index_name, I1.column_name 
+                FROM ALL_IND_COLUMNS I1 
+                    INNER JOIN
+                        ALL_INDEXES I2 ON I1.table_owner = I2.table_owner
+                            WHERE I1.table_owner = f_owner AND I1.index_name = f_object_name;
+        -- Объявление переменных:    
+        v_result clob;
+        v_table_owner varchar2(30);
+        v_table_name varchar2(50);
+        v_index_name varchar2(40);
+        v_column_name varchar2(40);
+        
+        BEGIN
+        -- Вывод индекса:
+        OPEN cur_idx;
+            LOOP
+                FETCH cur_idx
+                    INTO v_table_owner, v_table_name, v_index_name, v_column_name;
+            EXIT WHEN cur_idx%notfound;
+             v_result := 'CREATE INDEX ' || v_index_name || ' ON ' || v_table_name || '(' || v_column_name || ')';
+            END LOOP;
+            dbms_output.put_line(v_result);
+    
+            RETURN v_result;
+        END index_DDL;
+        
+        -- Анонимный блок:
+        DECLARE 
+            c CLOB;
+        BEGIN
+            c := index_DDL('TEST', 'PERSON', 'INDEX');
+        END;
+        /
+/*
+Результат работы:
+CREATE INDEX I_NAME PK_NAME(NAME_ID);
+*/
+
+-- FOR SEQUENCE:
+-- ----------------------------------------------------------------------------
+
+CREATE FUNCTION sequence_DDL ( f_owner    IN varchar2, 
+                               f_object_name IN varchar2, 
+                               f_object_type IN varchar2 )
+                               RETURN CLOB 
+                                    IS
+                                    v_result CLOB;
+                                    v_seq_name varchar2(50);
+                                    ex_name_exist EXCEPTION;
+        
+        BEGIN
+            SELECT sequence_name
+                INTO v_seq_name
+                    FROM all_sequences
+                        WHERE
+                            sequence_owner = f_owner AND sequence_name = f_object_name;
+                                RAISE ex_name_exist;
+        EXCEPTION
+            WHEN no_data_found THEN
+                v_result := v_result
+                            || 'CREATE SEQUENCE '
+                            || v_seq_name
+                            || chr(10)
+                            || 'MINVALUE 1'
+                            || chr(10)
+                            || 'START WITH 1'
+                            || chr(10)
+                            || 'INCREMENT BY 1';
+
+        dbms_output.put_line(v_result);
+        WHEN ex_name_exist 
+            THEN
+                raise_application_error(-20001, v_seq_name||'Занято, введите альтерантивное имя');
+                            RETURN v_result;
+        END sequence_DDL;
+        
+        -- Анонимный блок:
+        DECLARE 
+            s CLOB;
+        BEGIN
+            s := sequence_DDL('TEST', 'SEQ_STUDENT', 'SEQUENCE');
+        END;
+        /
+    /*
+Результат работы:
+CREATE SEQUENCE SEQ_PERSON
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+*/
+
+-- FOR TRIGGER
+-- -----------------------------------------------------------------------------
+CREATE FUNCTION trigger_DDL ( f_owner in varchar2, 
+                              f_object_name in varchar2, 
+                              f_object_type in varchar2 )
+                            RETURN CLOB
+                                IS
+    v_result            CLOB;
+    v_trg_name          VARCHAR2(50);
+    v_ck_table_name     VARCHAR2(50);
+    v_trigger_table     VARCHAR2(50);
+    v_trigger_sequence  VARCHAR2(50);
+    v_trigger_column    VARCHAR2(50);
+    v_type              VARCHAR2(50);
+    
+    BEGIN
+    -- Проверка на существование подходящей таблицы
+        v_trigger_table := substr(f_object_name, 5);
+        SELECT table_name
+            INTO v_ck_tabel_name
+                FROM all_tables
+                    WHERE
+                        owner = f_owner
+                            AND table_name = v_trigger_table;
+
+    EXCEPTION
+        WHEN no_data_found THEN
+            raise_application_error(-20001, 'Не найдено подходящей таблицы');
+    END;
+
+-- Проверка на существование подходящего сиквенса
+    BEGIN
+        SELECT sequence_name
+            INTO v_trigger_sequence
+                FROM all_sequences
+                    WHERE
+                        sequence_name = 'SEQ_' || v_ck_table_name;
+    
+
+    EXCEPTION
+        WHEN no_data_found THEN
+            raise_application_error(-20002, 'Не найдено подходходящей последовательности');
+    END;  
+
+-- Проверка на существование подходящей колонки PK
+    BEGIN
+        SELECT cc.column_name
+            INTO v_trigger_column
+                FROM all_cons_columns cc
+                    JOIN all_constraints c ON c.constraint_name = cc.constraint_name
+                        WHERE c.owner = f_owner
+                            AND c.table_name = v_ck_table_name
+                                AND c.constraint_type = 'P'
+                                    ORDER BY cc.position;
+
+    EXCEPTION
+        WHEN no_data_found THEN
+            raise_application_error(-20003, 'Не найдено подходящей колонки для PK');
+    END;
+    BEGIN
+    v_result := 'CREATE OR REPLACE TRIGGER '
+                 || v_trigger_name
+                 || chr(10);
+    v_type := substr(v_trigger_name, 3, 1);
+    
+    CASE v_type
+        WHEN 'B' THEN
+            v_result := v_result || 'BEFORE INSERT ON ';
+        WHEN 'A' THEN
+            v_ressult := v_result || 'AFTER INSERT ON ';
+    END CASE;
+
+    v_result := v_result
+                 || v_ck_table_name
+                 || chr(10)
+                 || 'FOR EACH ROW'
+                 || chr(10)
+                 || 'BEGIN'
+                 || chr(10)
+                 || 'SELECT '
+                 || v_trg_seq
+                 || '.nextval'
+                 || chr(10)
+                 || 'INTO :new.'
+                 || v_trg_col
+                 || chr(10)
+                 || 'FROM dual;'
+                 || chr(10)
+                 || 'END;';
+
+    dbms_output.put_line(v_result);
+        RETURN v_result;
+END;
+END trigger_DDL;
+
+/*
+Результат выполнения:
+CREATE OR REPLACE TRIGGER T_B_TABLE_NAME
+BEFORE INSERT ON TABLE_NAME FOR EACH ROW
+BEGIN
+    SELECT SEQ_NAME.nextval
+    INTO :new.NAME_ID
+    FROM dual;
+END;
+*/
+
+-- FOR PACKAGE:
+-- -----------------------------------------------------------------------------
+CREATE FUNCTION package_DDL ( f_owner in varchar2, 
+                              f_object_name in varchar2, 
+                              f_object_type in varchar2 )
+                            RETURN CLOB
+                                IS
+        CURSOR cur_pkg IS
+            SELECT text FROM all_source
+                WHERE  type = f_object_type AND name = f_object_name
+                    ORDER BY line;
+            
+            v_result CLOB;
+                    v_type varchar2(30);
+                    v_name varchar2(50);
+                    v_text CLOB;
+        BEGIN
+                    -- вывод пакета
+                    open cur_pkg;
+                        loop
+                            fetch cur_pkg
+                                into v_text;
+            EXIT when cur_pkg%notfound;
+            v_result := v_text;
+                        end loop;
+                        return v_result;
+        END package_DDL;
+
